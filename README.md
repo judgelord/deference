@@ -1,1 +1,74 @@
-# deference
+# Deference data
+
+
+The original data from Richards and Kritzer `basicinfo3` (case-level)
+and `votes` (justice-case-vote-level). These are converted from .sav
+files in import_ChevData.R
+
+-   These data cover SCOTUS cases 1969-2001 that where “Administrative
+    Law” appears in the headnotes
+
+Using the same selection critia, I added cases from 2001-2025.
+
+I then augment both sets of cases with additional variables
+
+-   `Headnote` is whether “Administrative Law” actually appears in the
+    headnotes (some cases returned did not, in fact, meet this inclusion
+    criteria)
+
+-   `cert` - Lexus search for SCOTUS cases with “Administrative Law” in
+    the headnotes returns documents that are explinations of denial of
+    cert - this indicator allows us to exclude these from the data
+
+-   `SG Amicus` (TODO check if this was in in the original data)
+
+-   `statute_year`
+
+-   `Policy` - 1 where agency makes a general policy (a rule or
+    something that could have been a rule); 0 otherwise (this non-
+    rulemaking category includes adjudication, ratemaking, and licensing
+    cases - not limited to these); input 99 if unclear or if the agency
+    decision involves both rulemaking and adjudication and explain in
+    notes
+
+-   `Policy Type` - If it is a policy, what type of policy is it?
+    Guidance, Letter, MOU, etc.? quotes from opinion Title of Regulation
+    (if mentioned) Of agency rule most at issue regulations.gov link to
+    final rule number of comments on the rulemaking docket according to
+    regulations.gov or on the NPRM, according to final rule on
+    https://www.federalregister.gov/
+
+-   `Policy Context`
+
+-   `Rule Title` -  
+
+-   `Final Rule Year`
+
+-   `rule_url`
+
+-   `rule_comments`
+
+-   `Rule Context`
+
+-   `RIN`
+
+-   `Fed. Reg.` - Standard Fed. Reg. citation format of agency
+    regulation or policy most at issue
+
+-   `Fed. Reg. Context`
+
+-   `CFR` Of agency rule most at issue
+
+-   `CFR context`
+
+-   `Other Fed. Reg. or CFR citations` - list of other relevant
+    citations
+
+-   `Agency Policy Direction` - (1) liberal, (-1) conservative, (0)
+    Neutral or Unclear - liberal policy direction including
+    anti-business, pro-environment, pro-consumer, pro-liability, and
+    pro- competition policy decisions. Conservative policy direction
+    refers to the opposites.
+
+-   `Policy Direction Context` - (Whatever you used to determine the
+    direction—i.e., the evidence for the Agency Policy Direction coding)
