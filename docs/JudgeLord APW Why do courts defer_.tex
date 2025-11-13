@@ -1,0 +1,963 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{dcolumn, multirow}
+\usepackage{graphicx}
+\usepackage{anysize, indentfirst, setspace}
+\usepackage{caption, rotating}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hanging}
+\usepackage{float}
+
+%ensure that each paragraph is not indented
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{.75em}
+
+\title{Why Do Courts Defer to Administrative Agency Judgment?}
+\author{Devin Judge-Lord \\ judgelord@wisc.edu}
+\date{\today} 
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+I investigate the conventional wisdom that courts are more likely to uphold federal agency policies made through notice-and-comment rulemaking. I find that Supreme Court Justices have different preferences for deference, but overall, are actually less likely to show deference in rulemaking cases. However, the evidence does not suggest that this is due to justices voting more ideologically due to the greater stakes in rulemaking cases as implied by previous research. I then investigate potential selection effects at the circuit court and certiorari stages that could cause rulemaking cases to lose at the Supreme Court. The results offer no evidence that deference differs between circuit courts and the Supreme Court. While the Supreme Court may disproportionately opt to review rulemaking cases, it does not appear to do this in order to systematically discipline lower courts. Finally, I examine elements of the rulemaking process itself that may affect judicial review. Greater participation in rulemaking correlates with deference, as does an agency's choice to regulate less rather than more. The puzzling negative relationship between rulemaking and deference remains unresolved, but, contrary to previous research, preliminary results suggest that justices may defer more to agency rulemaking on more salient issues where stakes are highest. 
+\end{abstract}
+
+\section{Introduction}
+\onehalfspacing
+Framed narrowly, this paper is about when courts uphold federal agency decisions. Seen more broadly, it is about what makes a policy legitimate. Is it simply how much one agrees with it? Or might legitimacy also depend on the process by which the policy was made--for example, the formality of the process, who participates in drafting it, or the expertise employed? Such questions of legitimacy are especially relevant for policy made by administrative agencies. One way that agencies make policy is through rulemaking, a process where agencies must solicit public comments on proposed policies before they carry the force of law. Ninety-percent of U.S. laws are of this administrative, rather than the legislative, kind (Conglianese 2004, West and Raso 2013). Agency policies vary significantly on expertise employed (Clinton and Lewis 2008), the scope and scale of stakeholder involvement (Yackee and Yackee 2006), and their ideological position (Cohen and Spitzer 1996). 
+
+One way policies are judged is through judicial review. Judges are widely known to vote to uphold policies with which they agree (Segal and Spaeth 2002). However, on the margin, judges are also said to follow a precedent of deference to agency policies made under authority delegated by Congress and through the rulemaking processes prescribed by the Administrative Procedures Act (Stephenson 2005). 
+
+This research is motivated in part by a puzzling empirical observation by Elliot and Schuck (1990) and Richards et al. (2006) that federal agencies were more likely to lose Supreme Court cases when the agency action being challenged involved rulemaking. By investigating this puzzle, I hope to improve our understanding of what makes administrative policies legitimate, at least with respect to judicial review. 
+
+If agencies were simply more likely to lose in court if they used rulemaking and to win if challenged for not using rulemaking, judicial review would be a disincentive to use this process. This does not appear to be the case. Agency staff, legal scholars, and judges suggest that notice-and-comment rulemaking does earn agencies a margin of deference. This suggests that cases involving notice-and-comment rule making are systematically different in other ways that may explain these puzzling results. The process by which agency policies are made, challenged, or evaluated must vary in ways that affect the results of judicial review. 
+
+Three kinds of factors could explain why agencies disproportionately lose rulemaking cases. It could be a result of (1) the nature of agency decision-making (e.g. which issues are selected for rulemaking or the process by which rules are made), (2) the nature of the process by which agency rules become Supreme Court cases (i.e. selection effects), or (3) the nature of judicial decision-making in these cases. Sections 2-4 of this paper address each of these possibilities in the reverse order.
+
+In this paper I extend two studies of judicial deference to more explicitly address rulemaking, investigate potential selection effects, and test characteristics of the policymaking process that may influence the results of judicial review. The remainder of this introduction reviews relevant scholarship on courts and bureaucratic policymaking. Section 2 introduces the data and presents results extending findings  by Richards et al. (2006) and Bailey and Maltzman (2008) regarding judicial deference. Section 3 addresses potential selection effects at the circuit court and certiorari stages that could explain why rulemaking cases are more likely to lose than other, similar Supreme Court cases. A penultimate section explores an expanded model of judicial deference accounting for differences in policymaking processes. The final section concludes with implications and suggestions future research. 
+
+
+\subsection{Judicial Review}
+
+This subsection situates my research in the literature on judicial decision-making. 
+
+When reviewing policies, judges consider both policy outcomes and legal principles (Bartels 2009, Baum 1997, Kahn 1999, Wahlbeck 1997). Bailey and Maltzman (2008) find that justices are motivated not only by policy goals, but also by ``the value that decisions should be guided by legal doctrines'' and that ``the extent of such influence varies across individual justices'' (pg. 369). I extend these findings to deference to agencies in section 2. Such jurisprudential norms or beliefs may also shape how justices pursue their other policy goals. For example Hansford and Spriggs (2006) find that certain precedents, especially those cited frequently and positively, affect how justices vote. A vote supporting or undermining a legal doctrine may shape the terrain for future battles over precedent and policy. Yet political science scholarship on judicial review focuses on how judges achieve desired policy outcomes, often overlooking the potential for individual justices to also be invested in advancing particular and enduring legal doctrines about the basis for review. 
+
+This paper focuses on one area of legal doctrine, judicial restraint in the form deference to administrative agencies. I investigate considerations other than immediate policy outcomes that may motivate justices to defer to bureaucratic policy decisions. Bailey and Maltzman (2008) find that doctrines of judicial restraint affect how justices vote, even after controlling for justices' policy preferences. Epstein and Knight (1998) explain judicial restraint as the Court strategically maintaining its legitimacy and thus the probability that other actors will comply with its decisions (pg. 48-49). For example, justices may accommodate the preferences of the president, federal agencies, Congress, or other actors upon which the Court relies to enforce its decisions (Epstein et al. 2001, Harvey and Friedman 2006, Segal et al. 2011). Judicial restraint may also maintain the Court's legitimacy in the eyes of the public (Baum 2006, Rosen 2006). 
+
+As members of an institution tasked with maintaining a balance and separation of powers, individual justices may have preferences for certain relationships between the legislative, executive, and judicial branches. Establishing or maintaining a certain principle of judicial restraint may itself be a goal. For example, Justice Scalia's commitment to promoting a literal interpretation of the First Amendment outweighed his desire to send flag-burners to jail (see Bailey and Maltzman 2008, pg. 327). Similarly, in \textit{Chevron  U.S.A., Inc. v. NRDC} (2001)(\textit{Chevron}) Justice Stevens, who generally supported strict environmental regulation, wrote an opinion upholding an Environmental Protection Agency (EPA) policy that was challenged by environmentalists for giving polluters too much flexibility in meeting Clean Air Act requirements. Justice Stevens outlined a test for when agencies like the EPA deserve deference. This and other deference doctrines articulate principled divisions of power between the executive and judicial branches, which may conflict with preferred policy outcomes in individual cases. Section 4 investigates the potential basis for such a preference for deference. 
+
+Justices claim that showing deference to agencies is important. Speaking for the Court in \textit{Chevron}, Justice Stevens wrote, ``We have long recognized that considerable weight should be accorded to an executive department's construction of a statutory scheme it is entrusted to administer.'' Yet claims about upholding such a precedent may be post hoc rationalizations for policy preferences (Segal and Spaeth 2002). Thus, scholars have attempted to assess whether ``\textit{Chevron} deference''--criteria outlining when an agency deserves deference--can be considered a jurisprudential regime. Richards et al. (2006) suggest that it can, that \textit{Chevron} marked a shift in how justices evaluate deference. Whether \textit{Chevron} was indeed a regime change has come under criticism (Lax and Rader 2010), but revised methodologies have found support for the ``\textit{Chevron} regime'' (Pang et al. 2012). 
+
+Regardless of when the jurisprudential factors affecting deference may have changed, the basic observation that courts defer to agencies has broad support among legal scholars (e.g. Canon and Giles 1972, Chae 2000, Cohen and Spitzer 1996, Crowley 1987, Stephenson 2005). Yet most existing studies focus on characteristics of the litigants or of the case, and few involve systemic analysis across cases. As Richards et al. (2006) note, ``the factors that are structured by a jurisprudential regime need not be limited to legal or jurisprudential factors, but can include policy considerations as well'' (pg. 449). While their study provides a foundation for considering the influence of policy factors, only a few such variables were measured. In general, scholarship has done little to assess whether judicial review is affected by characteristics of the policy under review or the process by which the policy was made. Knowing which types of policies and policy processes receive deference is essential for understanding how judicial review may affect policymaking and the balance of powers involved. 
+
+I address this gap in sections 2 and 4 by estimating models of judicial voting that include relevant policy factors. Bartels and O'Green (2014) note that studies of legal regimes, like the Richards et al. (2006) study of the \textit{Chevron} regime, address two separate questions, one about the nature of legal change and a second about the nature of judicial decision-making. The extent to which deference matters is not tied to any one model of legal change. While Richards et al. (2006) focus on the model of legal change, I focus on factors in judicial decision-making. 
+
+Furthermore, Richards et al. (2006) do not address the fact that regimes may be contested. If building a legal regime like \textit{Chevron} is a goal that some justices seek, then, rather than constraining or mediating underlying policy preferences, deference may be seen as certain justices getting their way. Following Bailey and Maltzman's (2008) findings that some justices are more likely than others to defer to Congress, I offer evidence as to which justices are and are not invested in promoting deference to agencies in section 2. I also look for disagreement between the Supreme Court and circuit courts on deference doctrine in section 3. 
+
+\subsection{Bureaucratic Policymaking}
+
+This subsection situates my research in the literature about how bureaucratic policies achieve legitimacy. Factors other than ideological agreement that explain why courts defer to agencies may be functions of the process by which agencies make policy. Such processes may be evaluated by accountability to political principals, by the expertise employed, or by who participated.  
+
+Justices may evaluate bureaucratic decisions on their faithfulness to the intent of political principals. Oversight mechanisms such as judicial review and prescriptive processes such as rulemaking can be seen as tools of political control (McCubbins et a. 1987). Some agencies are more insulated than others from political control. For example, the president can unilaterally remove the heads of some agencies but not others. Research shows that agencies vary in their responsiveness to Congress (Clinton et al. 2014, Farhang and Yaver 2015), the courts (Lauderdale and Clark 2014), the president (Carrigan and Krazdin 2015), and public opinion (Dunleavy 2013). The principal-agent literature focuses on the ideological positions of agencies, their policies, and various principals, but the reasoning behind policy positions may matter, as well. Elliot and Schuck (1990) note ``The conventional explanation for judicial review of agency action is the need to confine agencies to their legal authority.'' Bureaucrats who pursue goals distinct from the intent of the grant of authority from Congress or the president may be especially likely to lose legitimacy if perceived to have acted in bad faith. 
+
+Beyond faithful compliance, bureaucratic policies involve special expertise. Expertise may be a resource used to realize the goals of political principals, or it can lead agencies to autonomous policy positions. A reputation for expertise can increase agencies' autonomy and power and thus the legitimacy of their policies (Carpenter 2001). Carrigan and Kasdin (n.d.) find that in addition to an agency's resources and technical capacity, rules that are longer relative to their authorizing statutes are reviewed more quickly, concluding that agencies strategically introduce complexity in order to secure autonomy.
+
+Justices cannot be certain of the policy implications when voting on highly technical or complex issues. On the margin, deferring to agency judgment may be safer. Indeed, there is evidence that justices defer to the judgment of those with more expertise (Epstein and Knight 1998). Specifically, Black and Owens (2012) find that the Court privileges the professionalism and objectivity of the Solicitor General. This explanation is most consistent with justices' own accounts of why they defer to agency judgment. For example, in \textit{Chevron}, the Court held that the EPA deserved deference because ``the regulatory scheme is technical and complex, the agency considered the matter in a detailed and reasoned fashion, and the decision involves reconciling conflicting policies.'' This suggests that both the complexity of the issue and the process by which the decision was made affect deference.
+
+In addition to compliance and expertise, the level and type of participation are important criteria of legitimacy from pluralist and direct democracy perspectives (Woods 2013). A significant body of scholarship assesses which interest groups have influence in rulemaking (see Yackee and Yackee 2006, Yackee 2012). Some have described rulemaking's public comment process as ``refreshingly democratic'' (Asimow 1994) in a direct democracy sense. By these views, the type of groups or the number of individuals participating may affect legitimacy. Justices may respond to cues that reflect the relative support of the public or of those affected by the policy (Clark 2011).\footnote{This may also be strategic behavior to maintain legitimacy in the eyes of the public and maximize compliance. Justices lack the force to implement their decisions (Motti 1977), and scholars of the strategic model of judicial decision-making have found evidence that public opinion influences justices (e.g. Black and Owens 2015, Casillas et al. 2011, Clark 2009, Enns and Wohlfarth 2013, Epstein and Martin 2010, Friedman 2009, Giles et al. 2008, McGuire and Stimson 2004). Beyond participation in rulemaking (see section 4), this paper does not address the influence of public support.}
+
+While the above explanations for why courts may defer to agencies are not mutually exclusive, tradeoffs may exist among public participation and responsiveness, expertise, and accountability. For example, Lewis and Wood (n.d.) find that agencies that are more accountable to political principals are less responsive to citizen FOIA requests. As noted, expertise may also breed autonomy.  Scholars have yet to systematically explore which of these factors matter for judicial review of agency policies. 
+
+Several elements of the process by which the policy under review was made may affect justices' decision-making. Richards et al. (2006) offer two such factors: the length of the statute (``as a proxy for whether Congress spoke directly to the issue'' (pg. 449)) and rulemaking\footnote{Rulemaking is a process by which agencies make policy. As this paper does not distinguish between informal and formal rulemaking,``rulemaking'' refers to any agency rulemaking where a Notice of Proposed Rulemaking is published and public comments are solicited.} (``because there is more at stake, broader policies are implicated, and more potential litigants are affected'' (pg. 456)). Yet longer statutes may also provide agencies with more authority, and rulemaking--according to justices and legal scholars--should increase deference. Given the less-than-conclusive interpretations of these two variables in the literature, I re-examine them with alternative specifications in section 2, in relation to potential selection effects in section 3, and in the context of additional policy factors related to agency policymaking in section 4. 
+
+The following section focuses on explaining votes for deference based on Supreme Court Justices' preferences for deference and case characteristics. Several variables used in previous studies including the length of the authorizing statute, whether the president can fire the agency head, and whether the policy at issue involved rulemaking, are included in these models. Additional variables addressing accountability, expertise, and participation in policymaking are introduced in section 4. 
+
+\section{Supreme Court Review of Agency Rules}
+
+This section explores the nature of judicial decision-making in administrative law cases by extending two previous studies. Establishing the empirical plausibility of preferences for deference, I find that many of the justices Bailey and Maltzman (2008) find to show deference to Congress are also more deferential to federal agencies. I do not find empirical support for the explanation put forth by Richards et al. (2006) that agencies lose rulemaking cases because there is more at stake. There is no evidence that justices vote more ideologically in these cases and the negative relationship between rulemaking and deference actually increases when comparing rulemaking cases to similar cases with similar stakes. 
+ 
+\subsection{Data}
+
+The dataset, kindly provided by Mark Richards, Joseph Smith, and Bert Kritzer includes all orally argued cases between 1969 and 2000 that include ``administrative law'' in the LexisNexis headnotes about the case (Richards et al. 2006).\footnote{While far from selecting cases on the dependent variable, it is a risk that this population of cases is influenced by justices' decisions to address issues of administrative law in their opinions. Such remarks may or may not be about rulemaking and may or may not be supportive of deference, but there are possible pre-selection effects. For example, justices may implicitly defer to agency judgment by not raising administrative law questions or, conversely, may raise administrative law questions as a post hoc justification for a decision that was not originally a question of administrative law. It is not clear how such pre-selection effects would bias results.} These data include a number of variables relevant to the present investigation. As the original study was concerned with whether legal patterns of deference had changed (i.e. whether \textit{Chevron} constituted a jurisprudential regime), all but four of these variables (\textit{Agency Policy Direction, President Can Fire Agency Head, Statute Length, and Rulemaking}) address characteristics of the legal case or the justice. About half of administrative law cases are coded as ``Rulemaking'' in the dataset, and about one-third of these are notice-and-comment rulemaking (i.e. a Notice of Proposed Rulemaking [NPRM] was published in the Federal Register). The non-NPRM cases originally coded as “Rulemaking” included agency policy decisions distinct from but related to those made through notice-and-comment rulemaking. These include agency guidelines, policy statements by pseudo-governmental agencies that do not follow the APA, and lawsuits to force an agency to use notice-and-comment rulemaking for some policy decision.
+
+I collected additional data on whether a case evaluates policy made through notice-and-comment rulemaking for cases after \textit{Chevron} (1984) and before \textit{Mead} (2001). If evaluating theories of jurisprudential change, then examining cases before \textit{Chevron} would be essential. Given that this paper explores judicial decision-making factors, not regime change, these cases are less critical. Indeed, if Richards et al. (2006) are correct that the relative effects of many case factors changed after \textit{Chevron}, using cases before and after may introduce significant heterogeneity in both measured and unmeasured case factors and how those factors affect justices' votes. Data quality also limits observation to more recent cases. The further back in time, the more rulemaking documents are missing from Federal Register archives and the less consistent the information is in the documents that do exist. As these missing data are likely non-random, including older cases could bias results. Within this time period, I re-code all cases originally coded as ``rulemaking'' by Richards et al. (2006). Comparing NPRM cases with similar non-NPRM cases ensures that cases share as many attributes as possible while still varying on whether the policy was made through notice-and-comment rulemaking. 
+
+In addition to recording justices' votes, this dataset includes variables about the characteristics of case. It includes the nature of the \textit{Parties Opposing Deference} (corporation, non-corporate interest group, or individual), the \textit{Parties Advocating Deference} (agency type, agency alone, or agency with co-party), and the number of amicus curiae briefs (\textit{Pro-Deference Amici, Anti-Deference Amici, and Neutral Amici}). In addition to influencing justices, amicus curiae briefs (briefs submitted by those not a party to the case) may indicate case salience.
+
+Following Richards et al. (2006), I estimate the influence of justices' ideologies. \textit{Justice Ideology} scores are based on newspaper editorials about justices at the time of their nomination. These scores range from extremely conservative (-1) to extremely liberal (1).  If \textit{Justice Ideology} matters, the interaction of ideology with the liberal or conservative direction of the agency policy at issue will help explain votes. Thus, the \textit{Agency Policy} was coded according to the Spaeth conventions as conservative (-1), neutral (0), or liberal (1) and \textit{Justice Ideology*Agency Policy} estimates the effect of ideology on voting. Past scholarship creates a strong expectation that the interaction of \textit{Justice Ideology} and \textit{Agency Policy} will be positively correlated with justices' votes (Segal and Spaeth 2002). 
+
+Following what justices claim to do, Richards et al. expected that, all else being equal, \textit{Rulemaking} should increase the likelihood of deference. Richards et al. (2006) find the opposite, suggesting that this ``very interesting finding'' could be the result of higher stakes in rulemaking cases, presumably causing ideology to trump any preference for deference. I test this theory in two ways. First, I estimate a model comparing notice-and-comment rulemaking cases to other cases with similar stakes. Second I examine whether justices vote more ideologically in rulemaking cases.  
+
+\subsection{Results}
+
+This section presents results from three models. First, I show the plausibility of justices having preferences for deference. Second I show that NPRM rulemaking cases are less likely to receive deference than similar cases with similar stakes. Finally, I examine differences between rulemaking and non-rulemaking cases. As my dependent variables (a justice voting for deference or a case involving rulemaking) are dichotomous, I estimate logit models. 
+
+To assess whether individual justices have propensities for deference distinct from ideology (following Bailey and Maltzman 2008), Figure 1 presents the results of a model including all administrative law cases 1969-2000 with dummy variables for each justice as well as the interaction of justices' ideology with the ideological direction of the policy under review. Controlling for ideology, a majority of justices have some propensity for deference at the .1 level, but only for Justices White, Rehnquist, Souter, Ginsburg, and Breyer is this supported at the .05 level.
+
+
+\begin{figure}[H]
+\caption{Variation in Dereference Across Supreme Court Justices (see appendix for table)}
+ \includegraphics[width=12cm]{deferencebyjusticevisreg.png}
+\centering
+\end{figure}
+
+The results shown in Figure 1 map well onto findings by Bailey and Maltzman (2008) regarding propensities for deference to Congress and legal observers' assessment of justices propensities for deference to agencies. Results are consistent with Miles and Sunstein's (2006) observation that ``Justice Breyer, the Court's most vocal critic of a strong reading of \textit{Chevron}, is the most deferential justice in practice, while Justice Scalia, the Court's most vocal \textit{Chevron} enthusiast, is the least deferential'' (pg. 3). These results are also consistent with Bailey and Maltzman’s (2008) findings that Justices Scalia, Thomas, Kennedy, Marshal, and Brennan were least deferential to congress. None of these five have significant preferences for deference to agencies either. Conversely, Justices Burger, Powell, Souter, White, and Breyer, who were most deferential to Congress (Howard and Segal 2004), all have significant positive associations with deference to agencies as well. 
+
+Interestingly, Justice Ginsburg, who Bailey and Maltzman (2008) did not find to show very much deference to Congress, has a significant propensity to vote for deference to administrative agencies. This is interesting because deference to agencies is often justified based on authority delegated to them by Congress. Similarly, Justice Rehnquist, who gave little deference to Congress, votes disproportionately to defer to agencies. This runs counter to the finding of Lindquist and Solberg (2007) that during the Rehnquist Court, conservatives were more likely to strike federal laws. However, Justice Rehnquist did author an important opinion in \textit{Vermont Yankee v. NRDC} (1978) that has been read as setting a precedent for deference specifically to agency regulations, which Merrill (1993) argues is consistent with Justice Rehnquist's view of the proper relationship between the Court and policymakers. 
+
+That ideology matters is also consistent with Miles and Sunstein's (2006) conclusion that \textit{Chevron} did not dampen ideology. Yet, jurisprudential objectives like deference doctrines may still have significant effects even in the shadow of dominant ideological objectives. Importantly, propensities for deference are uneven, suggesting that legal scholars are correct that different justices have different preferences over important issues like the separation and balance of powers. 
+
+The models in Table 1 test the influence of policy factors on justices' votes.\footnote{ Additionally, unlike Richards et al. (2006), the models presented here all use two-tailed tests due to the above noted uncertainty in the potential direction of effects.} Model 1 re-examines the Richards et al. (2006) finding that rulemaking is significant and negatively correlated with deference. My more restrictive definition (Model 2) yields the same results. \textit{Rulemaking} generally remains significant and negative when additional variables are included. In no specification is it positive.
+
+  %%%%%%%%%%%%%%%%%%% 
+ %% TABLE 1 REPLICATION AND RULEMAKING  %%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%
+
+ \begin{table}[h] \centering 
+  \caption{Deference in Supreme Court Administrative Law Cases} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-3} 
+\\[-1.8ex] & \multicolumn{2}{c}{Deference Votes} \\ 
+\\[-1.8ex] & (All Admin. Cases) & (Rulemaking-like)\\ 
+\hline \\[-1.8ex] 
+ Amici Opposed & 0.012 & $-$0.018 \\ 
+  & (0.019) & (0.047) \\ 
+  & & \\ 
+ Deference Amici & 0.102$^{***}$ & 0.169$^{**}$ \\ 
+  & (0.029) & (0.078) \\ 
+  & & \\ 
+ Unclear Amici & $-$0.097$^{***}$ & 0.224$^{**}$ \\ 
+  & (0.035) & (0.090) \\ 
+  & & \\ 
+ Rulemaking-like Policy & $-$0.260$^{***}$ &  \\ 
+  & (0.092) &  \\ 
+  & & \\ 
+ Rulemaking &  & $-$1.068$^{***}$ \\ 
+  &  & (0.353) \\ 
+  & & \\ 
+ Statute Length & $-$0.001$^{***}$ & 0.001 \\ 
+  & (0.0003) & (0.001) \\ 
+  & & \\ 
+ Ideology*Agency Policy & 0.499$^{***}$ & 0.687$^{***}$ \\ 
+  & (0.064) & (0.231) \\ 
+  & & \\ 
+ Constant & 0.130 & 17.593 \\ 
+  & (0.740) & (817.733) \\ 
+  & & \\ 
+\hline \\[-1.8ex] 
+Observations & 2,589 & 353 \\ 
+Log Likelihood & $-$1,616.347 & $-$198.063 \\ 
+Akaike Inf. Crit. & 3,266.695 & 428.126 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Not shown:} & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\textit{Party Types}\\  
+\textit{Pres. Can Fire Head}\\ 
+\textit{(See Appendix)}\\ 
+\end{tabular} 
+\end{table} 
+ 
+
+I do not find that \textit{Statute Length} significantly affects deference. Due to the different kind of analysis and sample size, this does not contradict the finding of Richards et al. (2006) that the effect of \textit{Statute Length} on deference changed before and after \textit{Chevron}. It does raise questions about how to interpret this variable. If not significant among rulemaking cases after \textit{Chevron} (exactly when the Court should have been looking at statutory delegation), then the variation in the effect of \textit{Statute Length} before and after 1984 may be capturing something other than the specificity of the statute. As mentioned, longer statutes may contain additional delegations of authority just as often as they close off opportunities for agency interpretation. 
+
+As noted, the negative sign of the \textit{Rulemaking} variable is not consistent with what justices claim to do, nor does it fit well with the observations of legal scholars or existing theories of judicial decision-making. 
+
+Following Elliott and Schuck (1990), Richards et al. (2006) suggest that ``there is less deference to the agency in a rulemaking case because there is more at stake, broader policies are implicated, and more potential litigants are affected'' (pg. 456). Presumably this is because justices vote ideologically when there is more at stake.
+
+However, as the results in Table 1 show, agencies are even more likely to lose cases when they go through APA-style notice-and-comment rulemaking, even when compared only to other similar policy decisions with broad effects (i.e. those that could presumably have gone through notice-and-comment rulemaking process, but did not).\footnote{Note that Model 2 contains only rulemaking and rulemaking-like cases, so the effect of \textit{Rulemaking} is the effect of notice-and-comment rulemaking \textit{relative} to similar policies with similar stakes.} Indeed, in this later group of cases where agencies win, they are often being challenged, in part, for not using notice-and-comment rulemaking.
+
+Furthermore these data do not support the implication that justices vote more ideologically in rulemaking cases. \textit{Agency policy direction * Justice ideology} is not significantly correlated with \textit{rulemaking} (see `'Rulemaking Covariates" Table in the Appendix). Rather, the positive relationship between deference and the number of amicus curiae briefs--especially those coded as ``unclear'' in the side they support--suggests that deference is more likely in high-profile cases where the most may be at stake. %
+
+
+\section{Selection Effects}
+
+This section assesses potential selection effects that could explain why rulemaking cases tend to lose at the Supreme Court. I focus on two events in the chain between the agency decision and the Supreme Court decision: circuit court decisions and Supreme Court selection of cases to review. Supreme Court Justices may more often opt to hear a case when they intend to overrule the agency. If lower courts give deference liberally, the Supreme Court may primarily show deference by letting lower court decisions stand. This is especially plausible in the time period immediately after \textit{Chevron} when lower courts may have been unclear on the extent of the \textit{Chevron} deference doctrine and may have applied it more liberally than Supreme Court Justices intended. If the Supreme Court is selecting rulemaking cases it intends to overturn in order to systematically discipline lower courts for applying deference too liberally, circuit courts should be more likely to defer in rulemaking cases than the Supreme Court.
+
+I find no evidence of such selection effects. Circuit courts also tend to show less deference in rulemaking cases and do not tend to vote more ideologically in rulemaking cases. I do not find that circuit courts are more or less likely to show deference than the Supreme Court. Rulemaking cases may be more likely to be granted certiorari by the Supreme Court, but there is no evidence that the Supreme Court is selecting rulemaking cases it intends to overturn in order to discipline lower courts. 
+
+\subsection{Data}
+
+This section uses additional data, kindly provided by Chris Krewson, Ryan Owens, and Alex Tahk, who measured the same variables discussed above for a random sample of 175 administrative law decisions by circuit courts over the same time period. 
+
+\subsection{Results}
+
+Two models assess potential selection effects at the circuit court and certiorari stages. Table 2 repeats the previous analysis explaining deference for circuit courts. Table 3 compares between circuit court and Supreme Court cases. 
+
+
+
+ %%%%%%%%%%%%%%%%%%% 
+ %% TABLE 3 LOWER COURTS  %%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%
+
+ \begin{table}[H] \centering 
+  \caption{Deference in Circuit Court Cases} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Deference Vote \\ 
+\hline \\[-1.8ex] 
+ Rulemaking & $-$1.429$^{***}$ \\ 
+  & (0.465) \\ 
+  & \\ 
+ Deference Amici & 2.250$^{***}$ \\ 
+  & (0.613) \\ 
+  & \\ 
+ Amici Opposed & 0.274$^{**}$ \\ 
+  & (0.118) \\ 
+  & \\ 
+ Ideology*Agency Policy & $-$2.156$^{***}$ \\ 
+  & (0.727) \\ 
+  & \\ 
+ Ideology*Policy*Rulemaking & $-$0.767 \\ 
+  & (1.507) \\ 
+  & \\ 
+ Constant & $-$1.122 \\ 
+  & (0.784) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 410 \\ 
+Log Likelihood & $-$246.870 \\ 
+Akaike Inf. Crit. & 527.739 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{(See More in Appendix)}& \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular} 
+\end{table} 
+
+
+Table 2 suggests that circuit court judges defer to agencies in similar cases as Supreme Court Justices. They are less likely to defer in rulemaking cases and more likely to defer more salient cases (those with more amicus curiae briefs). Additionally, the positive relationships with all types of litigants other than state and local governments (the omitted category) suggest that circuit court judges tend to support federal agencies over local and state governments. 
+
+Table 3 shows differences between circuit and Supreme Court cases. As expected, Supreme Court cases tend to have more amicus curiae briefs. They are less likely to involve state and local governments. Regarding potential selection effects, there is no evidence of a difference between circuit courts and Supreme Court tendencies to vote ideologically or to show deference in rulemaking cases. 
+
+  %%%%%%%%%%%%%%%%%%% 
+ %% TABLE 4 COMPARE SCOTUS AND LOWER COURT %%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%
+
+ \begin{table}[H] \centering 
+  \caption{Comparing Supreme Court to Circuit Court Administrative Law Cases} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Supreme Court \\ 
+\hline \\[-1.8ex] 
+ Rulemaking & 0.206 \\ 
+  & (0.254) \\ 
+  & \\ 
+ Deference Vote & 0.151 \\ 
+  & (0.183) \\ 
+  & \\ 
+ Ideology*Agency Policy& $-$0.192 \\ 
+  & (0.142) \\ 
+  & \\ 
+ Rulemaking*Deference & 0.449 \\ 
+  & (0.325) \\ 
+  & \\ 
+ Constant & $-$21.946 \\ 
+  & (4,942.300) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 3,008 \\ 
+Log Likelihood & $-$596.117 \\ 
+Akaike Inf. Crit. & 1,228.233 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{More in Appendix}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+
+
+\section{Bureaucratic Policymaking}
+
+The nature of the policymaking process may also affect how justices evaluate policies. For example, in \textit{U.S. v. Mead Corp.} (2001)(\textit{Mead}), the Court held that deference to agency policy was contingent upon ``the fairness and deliberation that should underlie a pronouncement of such force.'' The majority opinion in \textit{Mead} held that agencies only qualify for \textit{Chevron} deference when the policy was made through notice-and-comment rulemaking as prescribed in the \textit{Administrative Procedures Act} (APA). The opinion noted that ``APA notice-and-comment is designed to assure due deliberation'' (\textit{U.S. v. Mead Corp.} 2001). Even before \textit{Mead}, opinions frequently noted whether or not the policy at issue resulted from notice-and-comment rulemaking and, occasionally, how representative commenters were. For example, in \textit{Vermont Yankee v. NRDC} (1978), Justice Rehnquist noted, ``More than 40 individuals and organizations representing a wide variety of interests submitted written comments.'' While plausible that justices sometimes care about the policymaking process, it has yet to be empirically tested.
+
+\subsection{Data and Expectations}
+
+The expected effect of some policy process variables may differ depending on the degree to which judicial review prioritizes factors like ideological agreement, expertise, accountability, or participation. Table 4 lays out expectations for a number of policy characteristics beyond those used in previous studies and discussed in section 2 (\textit{Statute Length} and \textit{Rulemaking}). 
+
+Where the president can fire the head of an agency, the agency may be more accountable, at least to the president. \textit{Rule Complexity} may indicate expertise, but may also be a sign of autonomy or an attempt to secure autonomy. If justices note that an agency has \textit{Special Expertise} and expertise matters in judicial review, these agencies should receive greater deference. \textit{Conflicting Statutes} around an agency action was cited in \textit{Chevron} as an indication that expert judgment was required and thus deference merited. It is not clear that court opinions referencing the Administrative Procedures Act (APA) indicate that the agency is a candidate for deference or if it will be found to have violated APA procedures. 
+
+Additionally, I add four variables to capture specific features of agency rulemaking that may make it more or less likely to receive deference. The number of comments received during rulemaking was found in the Final Rule published in the Federal Register. The number of comments ranged widely from as few as 14 to over 75,000.\footnote{As agencies have some control over the length of the comment period, the number of comments could be endogenous to an agency's perception of the political climate (Potter (n.d.)).} As additional comments likely diminish in marginal effect, \textit{Number of Comments}, is the logged value.  \textit{More Pro-Agency Comments} is coded as 1 when commenters voicing support for the particular agency action at issue outnumber those opposing it or when the Final Rule claims that a majority of comments supported the particular action. 
+
+If the legitimacy of agency policy depends on the expertise employed, rulemaking, especially complex rules with many comments, should receive deference. Rulemaking is a prescriptive and well-documented process for making reasoned policy decisions. The \textit{Number of Comments} may be seen as measure of the amount of information an agency has, but \textit{More Pro-Regulation Comments} would only matter if legitimacy were measured by stakeholder support. 
+
+If justices see themselves as enforcing accountability to stakeholders or promoting participation, \textit{Number of Comments} and \textit{More Pro-Regulation Comments} may both have positive effects on deference. Because the notice-and-comment process facilitates public participation, rules with an NPRM should receive more deference, while other, similar agency policies may not.
+
+Finally, I add a variable about why the agency ended up in court. \textit{Agency Overreach} is coded as 1 if the agency is accused of overstepping its authority and 0 if accused of failing to act when challengers claim the law required action.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Table 6 Expectations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[!b] \centering 
+  \caption{Expectations for Policymaking Variables} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{If deference is due to:} \\ 
+\cline{2-5} 
+\\[-1.8ex] & Ideology & \multicolumn{3}{c}{Policy Process} \\ 
+\cline{2-5} 
+\\[-1.8ex] & Policy Agreement & Expertise & Accountability & Participation\\ 
+\hline \\[-1.8ex] 
+Ideology*Policy & + &  & &\\ 
+  & & & &\\ 
+Pres. Can Fire Head &  &  & + &\\ 
+  & & & &\\ 
+Statue Length &  & ? & ? &\\ 
+  & & & &\\ 
+Rulemaking-like Policy &  & + &  &\\ 
+  & & & &\\ 
+Rulemaking (NPRM) & & + & + & +\\ 
+  & & & &\\ 
+Rule Complexity &  & + & -? & -\\ 
+  & & & &\\ 
+Special Expertise &  & + & -? & -\\ 
+  & & & &\\ 
+Conflicting Statutes &  & + & ? & \\ 
+  & & & &\\ 
+Justices Mention APA &  & ? & ? & ?\\ 
+  & & & &\\ 
+Comment Deadline Extended &  &  & + & +\\ 
+  & & & &\\ 
+Number of Comments &  & + & + & +\\ 
+  & & & &\\ 
+More Pro-Regulation Comments &  &  & +? & +\\ 
+  & & & &\\ 
+Agency Overreach &  &  & ? & \\ 
+  & & & &\\ 
+Bad Faith &  & - & - & - \\ 
+  & & & &\\ 
+\hline \\[-1.8ex]   
+\end{tabular} 
+\end{table} 
+
+
+\subsection{Results}
+
+Models 1 and 2 in Table 5 are the same as in section 2 with several additional variables (Model 2 compares notice-and-comment rulemaking to rulemaking-like policies). The positive relationship between deference and the president being able to unilaterally dismiss the agency head supports accountability as a factor in deference. Yet, it is difficult to be confident in this conclusion until the negative relationship with rulemaking (which should also provide accountability) is explained. The negative relationship between deference and justices mentioning the APA suggests that the APA often provides grounds for the Court to find agencies in violation of the policymaking procedures the APA prescribes, at least in rule-like polices. 
+
+Model 3 examines variation within rulemaking cases, restricting the analysis to only notice-and-comment rulemaking cases in order to examine whether rulemaking characteristics correlate with deference. The \textit{Number of Comments} received by the agency is positively correlated with deference while whether there are \textit{More Pro-Regulation Comments} is not. \textit{Agency Overreach} is negatively related to deference. \textit{Ideology*Agency Policy} continues to be strongly related to deference.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%[Table 7: policymaking factors]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[H] \centering 
+  \caption{Supreme Court Deference in Administrative Law Cases (policymaking variables)} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Deference Votes} \\ 
+\\[-1.8ex] & (All Admin. Cases) & (Rulemaking-Like Cases) & (NPRM Cases) \\ 
+\hline \\[-1.8ex] 
+ Ideology*Agency Policy & 0.649$^{***}$ & 0.685$^{***}$ & 1.457$^{***}$ \\ 
+  & (0.110) & (0.234) & (0.522) \\ 
+  & & & \\ 
+  Pres. Can Fire Head & 0.412$^{***}$ & 0.340 & $-$0.435 \\ 
+  & (0.146) & (0.366) & (0.581) \\ 
+  & & & \\ 
+ Statute Length & $-$0.001$^{***}$ & 0.001 & 0.005 \\ 
+  & (0.0004) & (0.001) & (0.004) \\ 
+  & & & \\ 
+ Rulemaking-like Policy & $-$0.376$^{***}$ &  &  \\ 
+  & (0.144) &  &  \\ 
+  & & & \\ 
+ Rulemaking &  & $-$1.475$^{***}$ &  \\ 
+  &  & (0.402) &  \\ 
+  & & & \\ 
+ Special Expertise & $-$0.731$^{***}$ & $-$0.463 & \\ 
+  & (0.142) & (0.359) &  \\ 
+  & & & \\ 
+ Conflicting Statutes & $-$0.019 & $-$0.612 &  \\ 
+  & (0.145) & (0.476) &  \\ 
+  & & & \\ 
+ APA Mentioned & 0.147 & $-$1.146$^{***}$ &  \\ 
+  & (0.139) & (0.398) &  \\ 
+  & & & \\  
+   Number of Comments &  &  & 0.282$^{**}$ \\ 
+  &  &  & (0.111) \\ 
+  & & & \\ 
+ More Pro-Reg. Comments &  &  & $-$0.270 \\ 
+  &  &  & (0.427) \\ 
+  & & & \\ 
+ Agency Overreach &  &  & $-$1.361$^{**}$ \\ 
+  &  &  & (0.544) \\ 
+  & & & \\ 
+ Constant & 1.026 & 21.396 & 18.746 \\ 
+  & (0.905) & (819.672) & (1,326.515) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Observations & 1,285 & 353 & 134 \\ 
+Log Likelihood & $-$775.863 & $-$189.623 & $-$72.222 \\ 
+Akaike Inf. Crit. & 1,593.727 & 419.246 & 166.443 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Not Shown:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\textit{Party and Amici Types}
+\end{tabular} 
+\end{table} 
+
+
+\section{Discussion}
+
+This study largely confirms and extends findings by Richards et al. (2006) and Bailey and Maltzman (2008) regarding factors that influence Supreme Court Justices’ decision-making. These extensions suggest several reinterpretations of previous findings and questions for further research.  
+
+The persistent negative relationship between rulemaking and deference could have several causes, but the explanation put forth by Elliot and Schuck (1990) and Richards et al. (2006) does not appear to be correct. Rulemaking cases are less likely to receive deference than similar non-rulemaking cases with similar stakes. Justices do not appear to vote more ideologically in rulemaking cases and more salient rulemaking cases are actually more likely to receive deference. 
+
+Broadly speaking, my findings support the idea that justices have preferences for certain forms of jurisprudence around showing deference to administrative agencies. Justices found to show deference to federal agencies are generally the same Baily and Maltzman found to show deference to Congress. 
+
+On average circuit courts appear to defer to federal agencies in similar ways to the Supreme Court. These similarities seem to rule out a selection effect where lower courts are passing particularly controversial rules on to the Supreme Court or the Supreme Court selects rulemaking cases it intends to reverse in order to discipline the lower courts. 
+
+After controlling for alignment between the policy and a justices' ideology, differences among agencies, policies, and the policy process affect how justices vote. However, the observed patterns are not entirely consistent with any of the four types sources of legitimacy emerging from the literature on bureaucratic policymaking. Instead, the best predictors of deference, the number of amicus curiae briefs (even those that do not support the agency) and comments during rulemaking (also including those that do not support the agency), seem to indicate issue salience as a cause of deference. Issue salience may itself be a proxy for agencies taking more care and using better science (Costa et al. 2015). Give the negative relationship between deference and mentions of the APA, one possible explanation for the negative relationship between deference and rulemaking is that the APA rulemaking creates more opportunities to be found at fault, but that for high-profile issues, agencies take extra care to comply and receive deference when they do.Future research should more explicitly measure expertise, procedural compliance, and issue salience at the policymaking stage. Additional theorizing may be needed to account for a potential link between issue salience and deference. 
+
+Justices could be ignoring the direction of comments for a number of reasons. They may simply not know or not care. In the text of Final Rules, the total number of comments is reported earlier in the text and much more frequently than the extent to which comments were supportive or critical. Justices or their clerks may gloss over the procedural section of Final Rules if they indeed read them at all. Alternatively, Justices may be aware of but place no weight on the opinion of commenters with unknown policy agendas and levels of expertise. Finally, justices may be all too aware of who commenters tend to be--interest groups and those mobilized by interest groups--and thus dismiss the opinion of comments due to such problems with ``second order'' participation (see Seifter 2015). If this is true, ``first order'' participation would not correlate with success (see \textit{Hux v. Ackbar} 2015). 
+
+The strong negative relationship between agencies being challenged for overstepping their authority and receiving deference may have important implications for our understanding of the effect of judicial review on agency behavior. If agencies know that courts tend to support them when accused of failing to implement or enforce a law but not when they are accused of being too ambitious, judicial review may dampen and delay agency policymaking. %Indeed, agencies may have incentives to err on the side of doing less than Congress and the president ask. 
+
+This finding is especially interesting when considering the groups that tend to be the opposing parties in each type of case. Public interest groups and state governments are the parties frequently challenging agencies for failing to act whereas regulated businesses more often challenge regulations as going too far. The latter may have more resources, but there is no evidence in these data that different opponent types affect deference in Supreme Court cases. Future research should examine whether agency overreach presents more opportunities to find fault in an agency's reasoning or if characteristics of the parties in these cases tend to decrease deference.
+
+One limitation of this study is that it is not able to distinguish between observationally equivalent decisions based on strategic behavior, genuine preferences, or norms. For example, justices may be less likely to defer to agencies accused of exceeding their authority because they genuinely believe such policies to be less legitimate or, alternatively, because they are strategically pursuing their own legitimacy. Multiple mechanisms may operate simultaneously and indistinguishably. The fact that the direction of comments is not significant suggests that if justices are behaving strategically, it may not be to please the actors represented by comments. However future research could distinguish between cases in which different types of interest groups dominate commenting as justices may care about some audiences more than others (Baum 2006, Black et al. 2016).  
+
+Future research could also include measures of agency ideology (e.g. Clinton and Lewis 2008) and performance. Cohen and Spitzer (1996) argue that the Supreme Court uses deference doctrine to transfer power between agencies and lower courts depending on their ideological tendencies (also see Stephenson 2004). Research also suggests performance may affect deference. Black et al. (2016) find evidence that justices write more clear opinions in order to increase compliance among poorly performing agencies.
+
+By presenting a framework to examine how policy factors affect whether Supreme Court Justices vote to defer to administrative agencies, this paper provides a foundation for future research. I have offered new interpretations of previously identified factors including the length of the statute on which a policy is based and whether it was made through rulemaking. I have also identified new variables that predict judicial deference, including the number of comments a policy received and whether it is challenged as doing more or less than Congress intended. There is solid ground to assert that characteristics of policies and the process by which they are made affect how courts treat them. This may be especially true for factors signaling an agency's ideology or expertise. Most importantly, the factors that the Court deems important likely affect agency policymaking. In this sense, defining doctrines of deference is one way that justices shape policy. 
+
+%\newpage
+
+\flushleft \textbf{References:}\\
+
+\begin{hangparas}{.25in}{1}
+
+Asimow, Michael. 1994. ``On Pressing McNollgast to the Limits: The Problem of Regulatory Costs." \textit{Law and Contemporary Problems.} 57 (1): 127–37.
+
+Bailey, Michael A., and Forrest Maltzman. 2011. \textit{The Constrained Court: Law, Politics, and the Decisions Justices Make.} Princeton: Princeton University Press.
+
+Bailey, Michael A., and Forrest Maltzman. 2008. ``Does Legal Doctrine Matter? Unpacking Law and Policy Preferences on the U.S. Supreme Court." \textit{American Political Science Review} 102(3): 369–84.
+
+Baum, Lawrence. 2006. \textit{Judges and Their Audiences: A Perspective on Judicial Behavior.} Princeton: Princeton University Press.
+
+Baum, Lawrence. 1997. \textit{The Puzzle of Judicial Behavior. }Ann Arbor: University of Michigan Press. 
+
+Bartels, Brandon L. 2009. ``The Constraining Capacity of Legal Doctrine on the U.S. Supreme Court.'' \textit{American Political Science Review} 103(3): 474–495.
+
+Bartels, Brandon L., and Andrew J. O’Green. 2014. ``The Nature of Legal Change on the U.S. Supreme Court: Jurisprudential Regimes Theory and Its Alternatives.'' \textit{American Journal of Political Science.}
+
+\textit{Burlington Truck Lines, Inc., et al. v. United States et al.} 1962. 371 U.S. 156.
+
+Black, Ryan C., and Ryan J. Owens. 2012. \textit{The Solicitor General and the United States Supreme Court: Executive Branch Influence and Judicial Decisions.} New York: Cambridge University Press.
+
+Black, Ryan C., and Ryan J. Owens. 2015. ``The Influence of Public Sentiment on Supreme Court Opinion Clarity.''
+
+Black, Ryan C., Ryan J. Owens, Justin Wedeking, and Patrick Wohlfarth. 2016. \textit{US Supreme Court Opinions and their Audiences.} New York: Cambridge University Press.
+
+Carrigan, Christopher, and Stuart Kasdin. ``Using Complexity to Secure Agency Autonomy in the Rulemaking Process.'' Presented at the 2015 Annual Conference of the Midwest Political Science Association, Chicago, IL.
+
+Canon, Bradley C., and Michael Giles. 1972. ``Recurring Litigants: Federal Agencies Before the Supreme Court.'' \textit{Western Political Quarterly} 25: 183–91.
+
+Carringan, Christopher, and Stuart Krazdin. 2015. ``Using Complexity to Secure Agency Autonomy in the Rulemaking Process.'' Presented at the Annual Meeting of the Midwest Political Science Association.
+
+Carpenter, Daniel P. 2001. \textit{The Forging of Bureaucratic Autonomy.} Princeton University Press.
+
+Carpenter, Dan, and David Moss. (Eds.). 2013. \textit{Preventing regulatory capture. }Cambridge University Press.
+
+Dunleavy, Patrick. 2014. \textit{Democracy, bureaucracy, and public choice.} Routledge. 
+
+Ethridge, Marcus E. 1982. ``The policy impact of citizen participation procedures: A comparative state study.'' \textit{American Politics Quarterly} 10:489509.
+
+ Farhang, Sean. and Miranda Yaver. 2015. ``Divided Government and the Fragmentation of American Law.'' \textit{American Journal of Political Science.} 108(7): 2643-2650.
+
+Kerwin, Cornelius, and Scott R. Furlong. 2011. \textit{Rulemaking: How government agencies write law and make policy.} 4th ed. Washington, DC: Congressional Quarterly.
+
+Casillas, Christopher J., Peter K. Enns and Patrick C. Wohlfarth. 2011. ``How Public Opinion Constrains the U.S. Supreme Court.'' \textit{American Journal of Political Science 55(1): 74–88.}
+
+Chae, Young-Geun. 2000. ``The U.S. Supreme Court’s Policy Preference and Institutional Restraint in Environmental Law.'' \textit{Wisconsin Environmental Law Journal 7: 41–92.}
+
+\textit{Chevron U.S.A., Inc. v. Natural Resources Defense Council.} 1984. 467 US 837.
+
+Clark, Tom S. 2011. \textit{The Limits of Judicial Independence.} New York: Cambridge University Press.
+
+Clark, Tom S. 2009. “The separation of powers, court curbing, and judicial legitimacy.” {American Journal of Political Science} 53(4): 971–89.
+
+Clayton, Cornell W., and Howard Gillman, eds. (1999) \textit{Supreme Court Decision- Making: New Institutionalist Approaches.} Chicago: Univ. of Chicago Press.
+
+Clinton, Joshua D., and David E. Lewis. 2008. ``Expert Opinion, Agency Characteristics, and Agency Preferences.'' \textit{Political Analysis} 16: 316.
+
+Cohen, Linda R. and Matthew L. Spitzer. 1996. ``Judicial Deference to Agency Action: A Rational Choice Theory and An Empirical Test.'' \textit{Southern California Law Review:} 431.
+
+Coglianese, Cary. 2004. “E-Rulemaking: Information Technology and the Regulatory Process.” \textit{Faculty Research Working Paper Series.} Kennedy School of Government, Harvard University.
+
+Crowley, Donald W. 1987. ``Judicial Review of Administrative Agencies: Does the Type of Agency Matter?'' \textit{Western Political Quarterly} 31: 265–83.
+
+Costa, Mia, Bruce Desmarais, and John Hird. 2015. ``Science Use in Regulatory Impact Analysis: The Effects of Political Attention and Controversy.'' \textit{Review of Policy Research} Forthcoming.
+
+Enns, Peter K. and Patrick C. Wohlfarth. 2013. ``The Swing Justice.'' \textit{Journal of Politics} 75(4): 1089–1107.
+
+Elliot, Donald, and Peter Schuck. 1990. ``To the Chevron Station: An Empirical Study of Federal Administrative Law.'' \textit{Yale Law School Faculty Scholarship Series.} Paper 2204
+
+Epstein, Lee, and Jack Knight. 2013. ``Reconsidering Judicial Preferences.'' \textit{Annual Review of Political Science} 16: 11-31.
+
+Epstein, Lee, and Jack Knight. 1998. \textit{The Choices Justices Make.} Washington, DC: CQ Press.
+
+Epstein, Lee, Jack Knight, and Andrew D. Martin. 2001. ``The Supreme Court as a Strategic National Policymaker.'' \textit{Emory Law Journal} 50: 583–611.
+
+Epstein, Lee, and Andrew D. Martin. 2010. ``Does public opinion influence the Supreme Court? Possibly yes (but we're not sure why).'' \textit{University of Pennsylvania Journal of Constitutional Law} 13.263.
+
+Fin et al. v. Ren et al. 2015. 614 US 2187.
+
+Friedman, Barry. 2009. \textit{The Will of the People: How Public Opinion has Influenced the Supreme Court and Shaped the Meaning of the Constitution.} New York: Macmillan.
+
+Giles, Michael W., Bethany Blackstone, and Richard L. Vining. 2008. ``The Supreme Court in American democracy: Unraveling the linkages between public opinion and judicial decision making.'' \textit{The Journal of Politics} 70(2): 293-306.
+
+Handberg, Roger (1979) ``The Supreme Court and Administrative Agencies: 1965– 1978.'' \textit{Journal of Contemporary Law }6: 161–76.
+
+Harvey, Anna, and Barry Friedman. 2006. ``Pulling Punches: Congressional Constraints on the Supreme Court’s Constitutional Rulings, 1987-200.'' \textit{Legislative Studies Quarterly} 31(4): 533-562.
+
+Howard, Robert, and Jeffrey A. Segal. 2004. ``A Preference for Deference? The Supreme Court and Judicial Review.''  \textit{Political Research Quarterly }57(1): 131-43.
+
+\textit{Hux v. Ackbar.} 2015. 327 US 1138.
+
+Kahn, Ronald. 1999. ``Institutionalized Norms and Supreme Court Decision-Making: The Rehnquist Court on Privacy and Religion.'' In \textit{Supreme Court Decision-Making: New Institutionalist Approaches,} ed. Cornell W. Clayton, and Howard Gillman. The University of Chicago Press.
+
+Lax, Jeffrey R. and Kelly T. Rader. 2010. ``Legal Constraints on Supreme Court Decision Making: Do Jurisprudential Regimes Exist?'' \textit{The Journal of Politics} 72: 273.
+
+Lewis, David E., and Abby K. Wood. N.d. \textit{The Paradox of Agency Responsiveness: A Federal FOIA Experiment.} Manuscript presented at the Midwest Political Science Association 2015 Annual Meeting. Chicago, IL.
+
+Lindquist, Stefanie A., and Rorie Spill Solberg. 2007. ``Judicial Review by the Burger and Rehnquist Courts Explaining Justices’ Responses to Constitutional Challenges.'' \textit{Political Research Quarterly} 60(1): 71-90.
+
+McCubbins, Mathew D, Roger G Noll, and Barry R Weingast. 1987. ``Administrative Procedures as Instruments of Political Control.'' \textit{Journal of Law, Economics, and Organization} 3: 243-77.
+
+McGuire, Kevin T. and James A. Stimson. 2004. ``The Least Dangerous Branch Revisited: New Evidence on Supreme Court Responsiveness to Public Preferences.'' \textit{Journal of Politics} 66(4):1018–1035.
+
+Merrill, Thomas W. 1993. ``Chief Justice Rehnquist, Pluralist Theory, and The Interpretation of Statutes.'' \textit{Rutgers Law Journal }25: 621.
+
+Miles, Thomas J. and Cass R. Sunstein. 2006. ``Do Judges Make Regulatory Policy? An Empirical Investigation of Chevron.'' \textit{University of Chicago Law Review} 73: 823–881.
+
+Motti, Cronan A. 1977. ``Underestimating the Force and Sources of Authority in Hierarchical Decision-Making.'' \textit{Talon Law Review. }77: 327.
+
+Pang, Xun, et al. 2012. ``Endogenous Jurisprudential Regimes.'' \textit{Political Analysis }20(4): 417-436.
+
+Potter, Rachel. N.d. ``Procedural Politicking: Agency Risk Management in the Federal Rulemaking Process.'' \textit{Unpublished Manuscript.}
+
+Segal, Jeffrey A., and Albert D. Cover. 1989. ``Ideological Values and the Votes of U.S. Supreme Court Justices.'' \textit{American Political Science Review} 83(2): 557–65.
+
+Segal, Jeffrey A., and Harold J. Spaeth. 2002. \textit{The Supreme Court and the Attitudinal Model Revisited.} New York: Cambridge University Press.
+
+Segal, Jeffrey A., Chad Westerland, and Stefanie A. Lindquist. 2011. ``Congress, the Supreme Court, and judicial review: Testing a constitutional separation of powers model.'' \textit{American Journal of Political Science} 55(1): 89-104.
+
+Seifter, Miriam. 2015. ``Second-Order Participation in Administrative Law.'' University of Wisconsin Law School Legal Studies Research Paper Series Paper No. 1364.
+
+Sheehan, Reginald. 1992. ``Federal Agencies and the Supreme Court: An Analysis of Litigation Outcomes, 1953–1988.'' \textit{American Politics Quarterly} 20: 478–500.
+
+Stephenson, Matthew C. 2004. ``Mixed Signals: Reconsidering the Political Economy of Judicial Deference to Administrative Agencies.'' \textit{Administrative Law Review} 56(3): 657-738.
+
+Rosen, Jeffrey. 2006. \textit{The Most Democratic Branch: How the Courts Serve America.}  New York: Oxford University Press.
+
+\textit{United States v. Mead Corp.} 2001. 533 U.S. 218.
+
+\textit{Vermont Yankee Nuclear Power Corp. v. Natural Resources Defense Council.} 1978. 435 US 519.
+
+Wahlbeck, Paul J. 1997. ``The Life of the Law: Judicial Politics and Legal Change.'' \textit{Journal of Politics.} 59(3): 778-802.
+
+West, William F., and Connor Raso. 2013. ``Who Shapes the Rulemaking Agenda?'' \textit{Journal of Public Administration Research and Theory.} 23(3): 495519.
+
+Woods, Neal. 2013. ``Regulatory Democracy Reconsidered: The Policy Impact of Public Participation Requirements.'' \textit{Journal of Public Administration Research and Theory.} 25: 571596. 
+
+Yackee, Jason Webb, and Susan Webb Yackee. 2006. ``A Bias towards Business? Assessing Interest Group Influence on the U.S. Bureaucracy.'' \textit{Journal of Politics.} 68(1): 12839.
+
+Yackee, Susan Webb. 2012. ``The Politis of Ex Parte Lobbying: Pre-ProposalAgenda building and Blocking during Agency Rulemaking.'' \textit{Journal of Public Administration Research and Theory} 22:373-393.
+
+ \end{hangparas}
+ 
+\newpage
+
+
+\textbf{Appendix}
+
+
+ %%%%%%%%%%%%%%%%%%% 
+ %% APENDIX %%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[!htbp] \centering 
+  \caption{Deference in Administrative Law Cases} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Deference Vote \\ 
+\hline \\[-1.8ex] 
+ Black & 0.197 \\ 
+  & (0.627) \\ 
+  & \\ 
+ Douglas & 0.059 \\ 
+  & (0.511) \\ 
+  & \\ 
+ Stewart & 0.508 \\ 
+  & (0.481) \\ 
+  & \\ 
+ Marshal & 0.576 \\ 
+  & (0.465) \\ 
+  & \\ 
+ Brennan & 0.622 \\ 
+  & (0.466) \\ 
+  & \\ 
+ White & 1.071$^{**}$ \\ 
+  & (0.465) \\ 
+  & \\ 
+ Burger & 0.939$^{**}$ \\ 
+  & (0.471) \\ 
+  & \\ 
+ Blackmun & 0.843$^{*}$ \\ 
+  & (0.464) \\ 
+  & \\ 
+ Powell & 0.883$^{*}$ \\ 
+  & (0.478) \\ 
+  & \\ 
+ Rehnquist & 0.907$^{**}$ \\ 
+  & (0.463) \\ 
+  & \\ 
+    \end{tabular} 
+\end{table} 
+\begin{table}[!htbp] \centering 
+  \caption{Deference in Administrative Law Cases (Continued)} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Deference Vote \\ 
+\hline \\[-1.8ex] 
+ Stevens & 0.847$^{*}$ \\ 
+  & (0.466) \\ 
+  & \\ 
+ O'Connor & 0.909$^{*}$ \\ 
+  & (0.472) \\ 
+  & \\ 
+ Scalia & 0.735 \\ 
+  & (0.485) \\ 
+  & \\ 
+ Kennedy & 0.587 \\ 
+  & (0.490) \\ 
+  & \\ 
+ Souter & 1.234$^{**}$ \\ 
+  & (0.514) \\ 
+  & \\ 
+ Thomas & 0.731 \\ 
+  & (0.513) \\ 
+  & \\ 
+ Ginsburg & 1.136$^{**}$ \\ 
+  & (0.547) \\ 
+  & \\ 
+ Breyer & 1.608$^{***}$ \\ 
+  & (0.582) \\ 
+  & \\ 
+ Agency Policy & 0.043 \\ 
+  & (0.044) \\ 
+  & \\ 
+ Agency Policy*Justice Ideology & 0.466$^{***}$ \\ 
+  & (0.062) \\ 
+  & \\ 
+ Constant & $-$0.256 \\ 
+  & (0.446) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 2,767 \\ 
+Log Likelihood & $-$1,774.332 \\ 
+Akaike Inf. Crit. & 3,590.664 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+  %%%%%%%%%%%%%%%%%%% 
+ %% TABLE 1 REPLICATION AND RULEMAKING  %%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%
+
+ \begin{table}[!htbp] \centering 
+  \caption{Deference in Supreme Court Administrative Law Cases} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-3} 
+\\[-1.8ex] & \multicolumn{2}{c}{Deference Votes} \\ 
+\\[-1.8ex] & (All Admin. Cases) & (Rulemaking-Like Cases)\\ 
+\hline \\[-1.8ex] 
+ Amici Opposed & 0.012 & $-$0.018 \\ 
+  & (0.019) & (0.047) \\ 
+  & & \\ 
+ Deference Amici & 0.102$^{***}$ & 0.169$^{**}$ \\ 
+  & (0.029) & (0.078) \\ 
+  & & \\ 
+ Unclear Amici & $-$0.097$^{***}$ & 0.224$^{**}$ \\ 
+  & (0.035) & (0.090) \\ 
+  & & \\ 
+ Corp. or Corp. Interest Group Opposition & 0.249 &  \\ 
+  & (0.734) &  \\ 
+  & & \\ 
+ Non-Corp. Interest Group Opposition & 0.748 & 0.427 \\ 
+  & (0.737) & (0.359) \\ 
+  & & \\ 
+ Individual Opposition & 0.233 & 1.160$^{**}$ \\ 
+  & (0.735) & (0.498) \\ 
+  & & \\ 
+ Pres. Can Fire Head & 0.404$^{***}$ & 0.541$^{*}$ \\ 
+  & (0.099) & (0.296) \\ 
+  & & \\ 
+ Rulemaking-like Policy & $-$0.260$^{***}$ &  \\ 
+  & (0.092) &  \\ 
+  & & \\ 
+ Rulemaking &  & $-$1.068$^{***}$ \\ 
+  &  & (0.353) \\ 
+  & & \\ 
+ Statute Length & $-$0.001$^{***}$ & 0.001 \\ 
+  & (0.0003) & (0.001) \\ 
+  & & \\ 
+ Ideology*Agency Policy & 0.499$^{***}$ & 0.687$^{***}$ \\ 
+  & (0.064) & (0.231) \\ 
+  & & \\ 
+ Constant & 0.130 & 17.593 \\ 
+  & (0.740) & (817.733) \\ 
+  & & \\ 
+\hline \\[-1.8ex] 
+Observations & 2,589 & 353 \\ 
+Log Likelihood & $-$1,616.347 & $-$198.063 \\ 
+Akaike Inf. Crit. & 3,266.695 & 428.126 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Not shown:} & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\textit{Party Advoctating Deference,}\\   
+\textit{Justice Ideology}\\
+\textit{More Liberal Agency Policy} 
+\end{tabular} 
+\end{table} 
+
+ %%%%%%%%%%%%%%%%%%% 
+ %% TABLE 2 Rulemaking and non-Rulemaking RULEMAKING COVARIATES%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[!htbp] \centering 
+  \caption{Rulemaking Covariates} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-3} 
+\\[-1.8ex] & All Admin. Cases & Rulemaking-like Cases \\ 
+\hline \\[-1.8ex] 
+ Amici Opposed & 0.080$^{***}$ & $-$0.529 \\ 
+  & (0.028) & (0.342) \\ 
+  & & \\ 
+ Deference Amici & 0.199$^{***}$ & $-$2.962$^{***}$ \\ 
+  & (0.050) & (1.015) \\ 
+  & & \\ 
+ Unclear Amici & 0.583$^{***}$ & 8.758$^{**}$ \\ 
+  & (0.134) & (3.435) \\ 
+  & & \\ 
+ Corp. or Corp. Interest Group Opposition & 14.990 &  \\ 
+  & (293.991) &  \\ 
+  & & \\ 
+ Non-Corp. Interest Group Opposition & 15.568 & 2.064$^{***}$ \\ 
+  & (293.991) & (0.562) \\ 
+  & & \\ 
+ Individual Opposition & 15.623 & 1.888$^{**}$ \\ 
+  & (293.991) & (0.915) \\ 
+  & & \\  
+ Pres. Can Fire Head & 0.992$^{***}$ & 1.889$^{*}$ \\ 
+  & (0.147) & (1.143) \\ 
+  & & \\ 
+ Statute Length & $-$0.002$^{***}$ & $-$0.024$^{***}$ \\ 
+  & (0.0004) & (0.008) \\ 
+  & & \\ 
+ Ideology*Agency Policy & 0.107 & $-$0.015 \\ 
+  & (0.109) & (0.366) \\ 
+  & & \\ 
+ Constant & $-$15.946 & $-$0.875 \\ 
+  & (293.991) & (0.822) \\ 
+  & & \\ 
+\hline \\[-1.8ex] 
+Observations & 1,285 & 345 \\ 
+Log Likelihood & $-$738.891 & $-$84.152 \\ 
+Akaike Inf. Crit. & 1,509.782 & 196.304 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Not shown:} & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\textit{Party Advoctating Deference,}\\
+\textit{Justice Ideology}\\
+\textit{More Liberal Agency Policy}  
+\end{tabular} 
+\end{table} 
+
+ %%%%%%%%%%%%%%%%%%% 
+ %% TABLE 3 LOWER COURTS  %%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%
+
+ \begin{table}[!htbp] \centering 
+  \caption{Deference in Circuit Court Administrative Law Cases} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Deference Vote \\ 
+\hline \\[-1.8ex] 
+ After Chevron & $-$0.006 \\ 
+  & (0.229) \\ 
+  & \\ 
+ Justice Ideology& 0.918$^{*}$ \\ 
+  & (0.494) \\ 
+  & \\ 
+ More Liberal Agency Policy & 0.844$^{***}$ \\ 
+  & (0.285) \\ 
+  & \\ 
+ Rulemaking & $-$1.429$^{***}$ \\ 
+  & (0.465) \\ 
+  & \\ 
+ Deference Amici & 2.250$^{***}$ \\ 
+  & (0.613) \\ 
+  & \\ 
+ Amici Opposed & 0.274$^{**}$ \\ 
+  & (0.118) \\ 
+  & \\ 
+ Corp. Interest Group Opposition & 0.774$^{*}$ \\ 
+  & (0.430) \\ 
+  & \\ 
+ Non-Corp. Interest Group Opposition & 2.085$^{***}$ \\ 
+  & (0.542) \\ 
+  & \\ 
+ Individual Opposition & 1.275$^{***}$ \\ 
+  & (0.494) \\ 
+  & \\ 
+ Pres. Can Fire Head & $-$0.434 \\ 
+  & (0.275) \\ 
+  & \\ 
+ Ideology*Agency Policy & $-$2.156$^{***}$ \\ 
+  & (0.727) \\ 
+  & \\ 
+ Ideology*Policy*Rulemaking & $-$0.767 \\ 
+  & (1.507) \\ 
+  & \\ 
+ Constant & $-$1.122 \\ 
+  & (0.784) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 410 \\ 
+Log Likelihood & $-$246.870 \\ 
+Akaike Inf. Crit. & 527.739 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Not shown:}& \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\textit{Party Advoctating Deference Vote,}\\
+\textit{Ideology*Rulemaking,}\\
+\textit{Agency Policy Direction*Rulemaking}   
+\end{tabular} 
+\end{table} 
+
+
+  %%%%%%%%%%%%%%%%%%% 
+ %% TABLE 4 COMPARE SCOTUS AND LOWER COURT %%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%
+
+ \begin{table}[!htbp] \centering 
+  \caption{Comparing Supreme Court to Circuit Court Administrative Law Cases} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Supreme Court \\ 
+\hline \\[-1.8ex] 
+ After Chevron & $-$0.140 \\ 
+  & (0.166) \\ 
+  & \\ 
+ More Liberal Agency Policy & $-$0.900$^{***}$ \\ 
+  & (0.114) \\ 
+  & \\ 
+ Justice Ideology& $-$0.215 \\ 
+  & (0.135) \\ 
+  & \\ 
+ Deference Amici & 1.859$^{***}$ \\ 
+  & (0.227) \\ 
+  & \\ 
+ Amici Opposed & 0.331$^{***}$ \\ 
+  & (0.069) \\ 
+  & \\ 
+ Corp. Interest Group Opposition & 2.030$^{***}$ \\ 
+  & (0.480) \\ 
+  & \\ 
+ Non-Corp. Interest Group Opposition & 4.347$^{***}$ \\ 
+  & (0.504) \\ 
+  & \\ 
+ Individual Opposition & 1.607$^{***}$ \\ 
+  & (0.482) \\ 
+  & \\ 
+ Pres. Can Fire Head & 0.598$^{***}$ \\ 
+  & (0.172) \\ 
+  & \\ 
+ Rulemaking & 0.206 \\ 
+  & (0.254) \\ 
+  & \\ 
+ Deference Vote & 0.151 \\ 
+  & (0.183) \\ 
+  & \\ 
+ Ideology*Agency Policy& $-$0.192 \\ 
+  & (0.142) \\ 
+  & \\ 
+ Rulemaking*Deference & 0.449 \\ 
+  & (0.325) \\ 
+  & \\ 
+ Constant & $-$21.946 \\ 
+  & (4,942.300) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 3,008 \\ 
+Log Likelihood & $-$596.117 \\ 
+Akaike Inf. Crit. & 1,228.233 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%[Table 7: policymaking factors]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}

@@ -103,7 +103,7 @@ sheet |> unnest(agency)
 
 ##########################################################################
 
-d <- full_join(votes2, sheet) |> select(SCOTUS_year,statute_year, rule_year, rulemaking, case, agency, rule_comments_n) |> distinct()
+d <- full_join(votes2, sheet) |> select(SCOTUS_year,statute_year, rule_year, rulemaking, case, agency, rule_comments_n, contains("context")) |> distinct()
 d
 
 scotus_data_combined <- d

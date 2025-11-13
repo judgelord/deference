@@ -1,0 +1,109 @@
+---
+title: "Judicial Review and Democracy"
+subtitle: "Do Courts Care About the Policy Process?"
+author: "Devin Judge-Lord <br> Paper & slides: [judgelord.github.io/research/deference](https://judgelord.github.io/research/correspondence)"
+editor_options: 
+  chunk_output_type: console
+title-slide-attributes:
+    data-background-image: "https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2015/04/pic_giant_040815_SM_Justice-System-DT-2.jpg"
+    data-background-size: cover
+    data-background-opacity: "0.25"
+cap-location: top
+format:
+ revealjs:
+   footer: "Paper & slides: [judgelord.github.io/research/deference](https://judgelord.github.io/research/deference"
+   incremental: true   
+   smaller: true
+   scrollable: true
+   #theme: [michigan.scss]
+embed-resources: true
+---
+
+
+
+## 
+
+
+### 1. The role of public participation in democracy and its effects on policy 
+### 2. The role of courts in a democracy and how they judge policy & policymaking
+### 3. Jurisprudential regimes
+
+
+## 
+
+> ``deference should be accorded to the agency's interpretation … the regulatory scheme is technical and complex, the agency considered the matter in a detailed and reasoned fashion, and the decision involves reconciling conflicting policies" - *Chevron v. NRDC* 
+
+
+> "the degree of the agency's care, its consistency, formality, and relative expertness...the fairness and deliberation that should underlie a pronouncement of such force (APA notice and comment is 'designed to assure due deliberation')." *US v. Mead Corp.*
+
+
+## Data (so far)
+
+All 517 Administrative Law^["Administrative Law" in the LexisNexis headnotes] SCOTUS cases + a random sample of 175 federal circuit court cases 1969-2025.
+
+- 100+ *case factors*
+  - Parties, briefs, citations, opinions, outcomes
+  - Nature of the agency action at issue (Rulemaking, Ratemaking, Licensing, Adjudication, etc.)
+  - Discussion of legislative process, APA, expertise, public participation, accountability
+- **Ideology:** Justices (Segal-Cover scores) × Policy (Spaeth criteria)
+- **Statutes** at issue (details TBD)
+- Draft & final **rules** + **comments** where rule is at issue (1984-2025)
+
+All thanks to Zayn Merrick & Will Cooper! ~20,000 bits of new information
+
+
+## SCOTUS AdLaw Cases
+
+![](figs/data-1)
+
+## SCOTUS AdLaw Cases by  Process 
+
+![](figs/data-2)
+
+
+## SCOTUS AdLaw Cases by Agency
+
+![](figs/data-3)
+
+## by Number of Public Comments 
+
+![](figs/data-4)
+
+
+## by Number of Public Comments 
+
+![](figs/data-5)
+
+
+# Preliminary results
+
+##
+
+### \#1. What kinds of policy processes withstand judicial review? 
+
+- ❌ -  expertise
+- ❌ -  accountability 
+- ✅ - participatory/controversial
+- ✅ - deregulatory
+
+
+### \#2. Why are policies made through notice and comment more likely to be struck down?
+
+- ❌ -  ideological voting 
+- ❌ -  selection from lower courts
+- ✅ -  controversial/salient (but see #1)
+
+
+### \#3. Was *Chevron/Mead* a regime?
+
+- The jurisprudential regimes methods debate used 1969-2000 data; I can revisit with 25 years of additional cases
+
+
+## Log odds of vote for agency
+
+![](figs/rulemaking.logit.png)
+
+
+## Log odds of vote for agency
+
+![](figs/rulemakingmorecut.png)

@@ -1,30 +1,68 @@
 ---
 title: "Untitled"
-format: html
+format:
+    html: 
+      toc: true
+      code-fold: true
+editor_options: 
+  chunk_output_type: console
+knitr:
+  opts_chunk:
+    fig.path: "figs/"
 ---
+
+```{r setup}
+library(tidyverse)
+library(magrittr)
+
+
+  
+# html table formatting
+kablebox <- . %>%  
+  head(100) %>%
+  knitr::kable() %>% 
+  kable_styling() %>% 
+  scroll_box(height = "200px")
+
+kablebox_long <- . %>% 
+  head(100) %>% 
+  knitr::kable() %>% 
+  kable_styling() %>% 
+  scroll_box(height = "500px")
+```
 
 
 ```{r}
 #| label: data
+#| fig-height: 5.2
+#| fig-width: 8
+
+
 
 load(file = here::here("data", "scotus_data_combined.rda"))
 
-d < scotus_data_combined
+d <- scotus_data_combined
 
 d$year <- d$SCOTUS_year
 
 ggplot(d) +
-  aes(x = year |> as.factor() ) +
+  aes(x = year  ) +
   geom_bar(position = "dodge") +
-  theme_minimal()
+    theme_minimal() + 
+    labs(x = "",
+       y = "N")
 
-
-ggplot(d) +
-  aes(x = year |> as.factor(),
+d |> 
+  mutate(rulemaking = replace_na(rulemaking, 0)) |> 
+ggplot() +
+  aes(x = year ,
       group = rulemaking,
       fill = rulemaking ==1) +
   geom_bar() + #position = "dodge") +
-  theme_minimal()
+    theme_minimal() + 
+  labs(x = "",
+       fill = "Rulemaking",
+       y = "N")
 
 # by agency
 d <- d |> unnest(agency) |>
@@ -32,38 +70,50 @@ d <- d |> unnest(agency) |>
   add_count(agency) |>
   mutate(rank = dense_rank(n),
          top10 = rank > 10,
-         agency10 = ifelse(top10, agency, "_Other"))
+         agency10 = ifelse(top10, agency, "_Other")) 
 
 
 d |>
 ggplot() +
-  aes(x = year |> as.factor(),
+  aes(x = year ,
       group = agency10,
       fill = agency10) +
   geom_bar() + #position = "dodge") +
-  theme_minimal()
+    theme_minimal() + 
+  labs(x = "",
+       fill = "Agency",
+       y = "N")
+
+
+
+## BY AGENCY 
+#TODO color by deference 
 
 library(ggrepel)
 d |>
   drop_na(year) |> 
   #filter(year > 2000) |>
 ggplot() +
-  aes(x = year |> as.factor() ,
+  aes(x = year  ,
+      color = agency10,
       y = rule_comments_n |> log(),
       label = agency ) +
   geom_point() +
   geom_text_repel() +
-  theme_minimal()
+  theme_minimal() + 
+  labs(x = "",
+       color = "Federal Agency",
+       #shape = "Policy Decision",
+       y = "log(public comments)")
 
 
 d |>
-  rename(SCOTUS_year = year) |>
   pivot_longer(cols = c("statute_year", "SCOTUS_year", "rule_year")) |>
   ggplot() +
   aes(x = value  ,
-      shape = name,
+      shape = name |> str_remove("_year") |> str_to_upper() |> str_replace("STATUTE", " STATUTE"),
       y = log(rule_comments_n + 1) ,
-      group = Case,
+      group = case,
       color = agency10) +
   geom_point() +
   #geom_text_repel(aes(label = agency)) +
@@ -71,7 +121,8 @@ d |>
   geom_line() +
   #geom_text(aes(label = statute_year, x = as.factor(statute_year)), check_overlap = T) +
   #geom_text(aes(label = rule_year), check_overlap = T) +
-  theme_minimal() +
+  theme_minimal() + 
+  scale_x_continuous(limits = c(1850, 2025)) + 
   labs(x = "",
        color = "Federal Agency",
        shape = "Policy Decision",

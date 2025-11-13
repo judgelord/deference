@@ -1,0 +1,283 @@
+
+\documentclass[10pt]{beamer}
+\mode<beamer>{%
+  \usetheme[]{CambridgeUS}}
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{amsfonts, amsmath, amssymb}
+%\usepackage{dcolumn, multirow}
+\usepackage{graphicx}
+%\usepackage{anysize, indentfirst, setspace}
+\usepackage{caption, rotating}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+%\usepackage{hanging}
+%\usepackage{float}
+
+\title{Why Do Courts Defer to Administrative Judgment?}
+\author[Devin Judge-Lord]{}
+%\institute{University of Wisconsin}
+%\titlegraphic{\includegraphics[width=20mm]{USTL}}
+\date{}
+\begin{document}
+\begin{frame}<handout:0>
+  \titlepage
+\end{frame}
+
+%%%
+%Thank you Ellie, 
+%As you all can see from the paper, this is a very early-stage project; I do not have answers to the question I raise and hope that you all will help me identify what is most interesting here and what data to collect going forward. 
+
+%This paper was motivated by a simple empirical puzzle. 
+
+%Anyone who has taken administrative law knows that agencies are entitled to deference, especially when they follow the rulemaking process outlined in the APA. Deference is the idea that courts should not supplant their interpretation of statues for an agency's, presumably because the agency has expertise, is closer to the political situation etc. 
+
+%However, in Ryan's Supreme Court class, we read an article by Mark Richards, Joe Smith, Bert Kritzer--Mark did his PhD here and Bert Taught her for 20 years and they both asked me to say to everyone. 
+
+%They claim agencies tend to lose rulemaking cases because there is more at stake. presumably because justices then they vote more ideologically. 
+
+% This does appear to be the case
+% judges do not vote more ideologically and defer less to notice and comment rulemaking compared to other agency policies with similar stakes
+
+% Taking a step back, there are three kinds of things--something about the agency decision-making process in rulemaking that makes them more likely to lose, 
+
+
+
+
+
+
+
+
+
+\begin{frame}
+  \frametitle{}
+\begin{table}
+\begin{tabular}{@{\extracolsep{5pt}}ccccccc} 
+
+&\fbox{Agency Policymaking} & $\rightarrow$ & \fbox{Lower Courts} &$\rightarrow$ & \fbox{Supreme Court}\\
+
+\end{tabular}
+\end{table}
+\end{frame}
+%\color{red}\}\textit{selection}\{ \color{black}
+%\color{red}\}\textit{decisionmaking}\{
+
+
+
+
+\section{Motivation}
+\begin{frame}
+  \frametitle{Puzzle}
+  Rulemaking = Deference
+  \begin{itemize}
+    \item ``deference should be accorded to the agency's interpretation'' (\textit{Chevron v. NRDC} 1984) 
+    \item ``APA notice and comment [rulemaking] is designed to assure due deliberation'' (\textit{US v. Mead Corp.} 2001)
+  \end{itemize} \pause
+  Rulemaking $\neq$ Deference
+    \begin{itemize}
+      \item Elliott and Schuck (1990), Richards, Smith, and Kritzer (2006)
+      \item ``A very interesting finding''
+      \item ``because there is more at stake''
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+Not the high stakes:
+\begin{figure}
+\caption{Voting for Deference (Logit Coefficients)}
+\includegraphics[width=10cm]{rulemakinglogitcut.png}
+\centering
+\end{figure}
+\tiny
+Rulemaking = NPRM Rulemaking (vs. similar cases)\\
+\color{red} Rulemaking = Rulemaking-like cases (vs. all admin. cases)
+\end{frame}
+
+\section{Policymaking, Selection, or Judicial Decision-making?}
+\begin{frame}
+  \frametitle{}
+\begin{table}
+\begin{tabular}{@{\extracolsep{5pt}}ccccccc} 
+& &  & &  \\
+& &(lawsuits)&\multicolumn{3}{c}{(disciplining)}\\
+& & & & & \\
+&\fbox{Policymaking} & $\rightarrow$ & \fbox{Lower Courts} &$\rightarrow$ & \fbox{Supreme Court}\\
+& & & & \\
+&(accountability) &  &  & & (agreement)\\
+& (expertise)  &   & & & (stakes)\\
+& (participation) & & & \\
+\end{tabular}
+\end{table}
+\end{frame}
+%\color{red}\}\textit{selection}\{ \color{black}
+%\color{red}\}\textit{decisionmaking}\{
+
+\begin{frame}
+\frametitle{Disciplining?}
+\begin{itemize}
+\item Very similar to Supreme Court
+\begin{itemize}
+\item Even opposing briefs increase deference
+\end{itemize}
+\end{itemize}
+
+\begin{table}[H] \centering \tiny
+  \caption{Deference in Circuit Court Cases} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Deference Vote \\ 
+\hline \\[-1.8ex] 
+ Rulemaking & $-$1.429$^{***}$ \\ 
+  & (0.465) \\ 
+  & \\ 
+ Deference Amici & 2.250$^{***}$ \\ 
+  & (0.613) \\ 
+  & \\ 
+ Amici Opposed & 0.274$^{**}$ \\ 
+  & (0.118) \\ 
+  & \\ 
+ Ideology*Agency Policy & $-$2.156$^{***}$ \\ 
+  & (0.727) \\ 
+  & \\ 
+ Ideology*Policy*Rulemaking & $-$0.767 \\ 
+  & (1.507) \\ 
+  & \\ 
+ Constant & $-$1.122 \\ 
+  & (0.784) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 410 \\ 
+Log Likelihood & $-$246.870 \\ 
+Akaike Inf. Crit. & 527.739 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{(See More in Appendix)}& \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular} 
+\end{table} 
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Policymaking Factors}
+\begin{figure}
+\caption{Voting for Deference (Logit Coefficients)}
+\includegraphics[width=10cm]{rulemakingvarscut.png}
+\centering
+\end{figure}
+\tiny
+\end{frame}
+
+\begin{frame}
+\frametitle{The Puzzle Persists}
+\begin{itemize}
+\item Not high stakes
+      \begin{itemize}
+        \item Not more ideological
+        \item Less deference than for policies with similar stakes\pause
+      \end{itemize}
+\item Not disciplining circuit courts
+      \begin{itemize}
+        \item No difference in deference or ideological voting
+      \end{itemize}\pause
+\item No clear pattern in policymaking factors 
+      \begin{itemize}
+        \item More controversial rules get more deference
+      \end{itemize}\pause
+\item Salience?
+      \begin{itemize}
+        \item Amicus briefs, rule comments = deference
+      \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Next Steps}
+\begin{itemize}
+  \item I should use:
+    \begin{itemize}
+      \item A selection model
+      \item Clustered errors
+    \end{itemize}
+  \item What else? 
+    \begin{itemize}
+    \item Hypotheses
+    \item What data for 2001-2016?
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{extra}
+
+\begin{frame}
+\begin{table}[H] \centering \tiny
+  \caption{Comparing Supreme Court to Circuit Court Administrative Law Cases} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Supreme Court \\ 
+\hline \\[-1.8ex] 
+ Rulemaking & 0.206 \\ 
+  & (0.254) \\ 
+  & \\ 
+ Deference Vote & 0.151 \\ 
+  & (0.183) \\ 
+  & \\ 
+ Ideology*Agency Policy& $-$0.192 \\ 
+  & (0.142) \\ 
+  & \\ 
+ Rulemaking*Deference & 0.449 \\ 
+  & (0.325) \\ 
+  & \\ 
+ Constant & $-$21.946 \\ 
+  & (4,942.300) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 3,008 \\ 
+Log Likelihood & $-$596.117 \\ 
+Akaike Inf. Crit. & 1,228.233 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{More in Appendix}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+\end{frame}
+
+\begin{frame}
+\frametitle{Policymaking Factors}
+\begin{figure}
+\caption{Voting for Deference (Logit Coefficients)}
+\includegraphics[width=10cm]{rulemakingmorecut.png}
+\centering
+\end{figure}
+\tiny
+\end{frame}
+
+\begin{frame}
+\begin{block} 
+``deference should be accorded to the agency's interpretation … the regulatory scheme is technical and complex, the agency considered the matter in a detailed and reasoned fashion, and the decision involves reconciling conflicting policies'' (\textit{Chevron v. NRDC})
+\end{block}
+\begin{block}
+
+``the degree of the agency's care, its consistency, formality, and relative expertness...the fairness and deliberation that should underlie a pronouncement of such force (APA notice and comment is `designed to assure due deliberation').'' (\textit{US v. Mead Corp.})
+\end{block}
+\end{frame}
+
+\begin{frame}
+\includegraphics[width=9cm]{fedregcomments.png}
+\end{frame}
+
+\end{document}
