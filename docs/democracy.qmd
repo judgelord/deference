@@ -1,7 +1,7 @@
 ---
 title: "Judicial Review and Democracy"
 subtitle: "Do Courts Care About the Policy Process?"
-author: "Devin Judge-Lord <br> Paper & slides: [judgelord.github.io/research/deference](https://judgelord.github.io/research/correspondence)"
+author: "Devin Judge-Lord <br> Paper & slides: [judgelord.github.io/research/deference](https://judgelord.github.io/research"
 editor_options: 
   chunk_output_type: console
 title-slide-attributes:
@@ -11,7 +11,7 @@ title-slide-attributes:
 cap-location: top
 format:
  revealjs:
-   footer: "Paper & slides: [judgelord.github.io/research/deference](https://judgelord.github.io/research/deference"
+   footer: "Paper & slides: [judgelord.github.io/research/deference](https://judgelord.github.io/research/deference)"
    incremental: true   
    smaller: true
    scrollable: true
@@ -31,7 +31,7 @@ embed-resources: true
 
 ## 
 
-> ``deference should be accorded to the agency's interpretation … the regulatory scheme is technical and complex, the agency considered the matter in a detailed and reasoned fashion, and the decision involves reconciling conflicting policies" - *Chevron v. NRDC* 
+> "deference should be accorded to the agency's interpretation … the regulatory scheme is technical and complex, the agency considered the matter in a detailed and reasoned fashion, and the decision involves reconciling conflicting policies" - *Chevron v. NRDC* 
 
 
 > "the degree of the agency's care, its consistency, formality, and relative expertness...the fairness and deliberation that should underlie a pronouncement of such force (APA notice and comment is 'designed to assure due deliberation')." *US v. Mead Corp.*
