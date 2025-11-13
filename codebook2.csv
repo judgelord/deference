@@ -1,0 +1,330 @@
+name,value
+Case,NA
+Coder,NA
+date,NA
+Headnote,99
+Case type,"tax (1), prisoner (2), (3) neither, (4) FOIA, (5) Privacy (6) Private tort (7) Patent (8) Trademark (9) Federal Personnel Policy (e.g., hireing, fireing, pay)"
+Circuit,1-11th circuit. DC = 12. Fed = 13
+Circuit2,"If multiple lower courts, list additional circuits, otherwise ""NA"""
+cert,"cert (0 = cert denied, 1 or blank if granted)"
+Concurrence,How many concurring opinions (often 0)
+Appellant/Petitioner (who brings the case),"1    State or local government
+    2    Business corporation
+3 Trade Association/corporate 
+(pro-business) interest group
+4    Noncorporate interest group
+5        Individual
+6        Federal Government
+9    Agency is appellant"
+Appellant 2,"0    No second appellant
+    1    State or local government
+    2    Business corporation
+3        Trade Association/corporate 
+(pro-business) interest group
+4        Noncorporate interest group
+5        Individual
+6        Federal Goverment
+8    not identified (e.g., “et al.”)
+9    Agency is second appellant"
+Appellant 3,"0    No third appellant
+    1    State or local government
+    2    Business corporation
+3        Trade Association/corporate 
+(pro-business) interest group
+4        Noncorporate interest group
+5        Individual
+6        Federal Goverment
+8    not identified (e.g., “et al.”)
+9    Agency is appellant 3"
+Respondent (who is defending the position held by the lower court),"1    State or local government
+    2    Business corporation
+ 3        Trade Association/corporate 
+(pro-business) interest group
+ 4        Noncorporate interest group
+5        Individual
+6        Federal Goverment
+9    Agency is Respondent"
+Respondent 2,"0    No second respondent
+    1    State or local government
+    2    Business corporation
+3        Trade Association/corporate 
+(pro-business) interest group
+4        Noncorporate interest group
+5        Individual
+6        Federal government
+8    not identified (e.g., “et al.”)
+9    Another Agency is Second Respondent"
+Respondent 3,"0    No third respondent
+    1    State or local government
+    2    Business corporation
+3        Trade Association/corporate 
+(pro-business) interest group
+4        Noncorporate interest group
+5        Individual
+6        Federal government
+8    not identified (e.g., “et al.”)
+9    Another Agency is Respondent 3"
+Non-agency plaintif type,"For profit = 0 (including industry associations), nonprofit = 1 (if corporation), 2 = cooperative"
+Govt Amicus,"Did the federal government appear as amicus? 1) Yes, supporting agency decision 2) Yes, opposing agency decision 3) No 9) not applicable (governmental was a party)"
+SG Amicus,"Did the Solicitor General submit a brief?  --- 1 Yes, supporting agency decision 2 Yes, opposing agency decision 3) No 9) not applicable (SG represented the agency in main brief)"
+Agency,try to find standard abbreviation:
+AGENCIES,NA
+Statute,"List statutes, acts, laws that the agency action is rooted in (i.e., on what authority are they making a decision or policy)"
+Statute Year,of most recent statute
+Section,of most recent statute
+Reference,USC/USCS standard format
+Policy,"1 where agency makes a general policy (a rule or something that could have been a rule); 0 otherwise (this non- rulemaking category includes adjudication, ratemaking, and licensing cases - not limited to these); input 99 if unclear or if the agency decision involves both rulemaking and adjudication and explain in notes"
+Policy Type,"If it is a policy, what type of policy is it? Guidance, Letter, MOU, etc.?"
+Policy Context,quotes from opinion
+Rule Title,Title of Regulation (if mentioned)
+Final Rule Year,Of agency rule most at issue
+rule_url,regulations.gov link to final rule
+rule_comments,"number of comments on the rulemaking docket according to regulations.gov or on the NPRM, according to final rule on https://www.federalregister.gov/"
+Rule Context,NA
+RIN,NA
+Fed. Reg.,Standard Fed. Reg. citation format of agency regulation or policy most at issue
+Fed. Reg. Context,NA
+CFR,Of agency rule most at issue
+CFR context,NA
+Other Fed. Reg. or CFR citations,list of others
+Agency Policy Direction,"(1) liberal, (-1) conservative, (0) Neutral or Unclear"
+Policy Direction Context,"liberal policy direction including anti-business, pro-environment, pro-consumer, pro-liability, and pro- competition policy decisions. Conservative policy direction refers to the opposites. (Whatever you used to determine the direction---i.e., the evidence for the Agency Policy Direction coding)"
+Deference,"Did the agency's side win 1= yes, 0 = no, otherwise NA"
+Deference Context,"first search for ""deference"" and copy any text here. If no mention, copy text that best sums up why the agency won or lost"
+Type of Party Opposing Deference,0 if Government (primarily state government); 1 if Corporation (or business interest groups); 2 if Non-Corporate Interest Group; or 3 if Individual
+"for profit = 0, nonprofit = 1",NA
+Type of Party Advocating Deference,0 if Non-Agency; 1 if Agency Alone Advocating Deference; or 2 if Agency with Co-Party
+Expertise in Opinion,"1 if Agency ""expertise"" mentioned (or ""wisdom"", ""technical knowledge"", etc.), 0 otherwise"
+Expertise Context  in Opinion,quotes from majority's opinion (not in dissent)
+Accountability in Opinion,"1 if ""Accountability"" of agency to public opinion is mentioned, 0 otherwise"
+Accountability to Congress in Opinion,"(also, ""legislative"") accountability of agency is mentioned, 0 otherwise"
+Accountability to President in Opinion,"(also, ""executive"")  accountability of agency is mentioned, 0 otherwise"
+Accountability Context  in Opinion,NA
+Expertise in Dissent,"in dissenting opinion(s), 1 = yes, 0 = no"
+Expertise Context in Dissent,in dissenting opinion(s)
+Accountability to Public Opinion in Dissent,"1 if ""Accountability"" of agency to public opinion is mentioned, 0 otherwise"
+Accountability to Congress in Dissent,"(also, ""legislative"") accountability of agency is mentioned, 0 otherwise"
+Accountability to President in Dissent,"(also, ""executive"")  accountability of agency is mentioned, 0 otherwise"
+Accountability Context,in dissenting opinion(s)
+Notice and comment rulemaking,"1 if the policy at issue was made through ""notice-and-comment"" rulemaking"
+"""notice-and-comment"" mentioned","1 if opinion or dissent contains the phrase ""notice-and-comment"""
+Notice-and-comment context,quotes from opionion
+Pro-Deference Amicus,Number of amicus briefs supporting regulation
+Anti-Deference Amicus,Number of amicus briefs opposing regulation
+Unclear Amicus,Number of briefs that are unclear
+Apply Standard of Review,"de novo, substantial evidence, capricious and arbitrary, the abuse of discretion, reasonable construction, permissible construction, constitutional, strict scrutiny, major questions doctrine, clear statement rule"
+Standard of Review Context,quotes from opionion
+Chevron (1984) Cited,"Chevron (1984) cited
+1        Cited and followed
+2        Cited but not followed
+3        Not cited
+8        Not applicable (statutory interpretation by agency not at issue)
+9        Case decided pre-Chevron"
+Chevron Context,quotes from opionion
+Mead (2001) Cited,"1        Cited and followed
+2        Cited but not followed
+3        Not cited
+8        Not applicable (statutory interpretation by agency not at issue)
+9        Case decided pre-Mead"
+Mead Context,quotes from opionion
+MVMA v. State Farm (1983) cited:,"1        Cited and followed
+2        Cited but not followed
+3        Not cited
+8        Not applicable (statutory interpretation by agency not at issue)
+9        Case decided pre-State Farm"
+State Farm Context,quotes from opionion
+Auer Cited,"1        Cited and followed
+2        Cited but not followed
+3        Not cited
+8        Not applicable (statutory interpretation by agency not at issue, only applicable when agency made a policy based on the statute)
+9        Case decided pre-Auer"
+Auer Context,quotes from opinion
+Outcome,"1  stay, petition, or motion granted
+   2  affirmed; or affirmed and petition denied
+   3  reversed (include reversed & vacated)
+   4  reversed and remanded (or just remanded)
+   5  vacated and remanded (also set aside & remanded; modified and remanded)
+   6  affirmed in part and reversed in part (or modified or affirmed and modified)
+   7  affirmed in part, reversed (or vacated) in part, and remanded
+   8  vacated
+   9  petition denied or appeal dismissed
+   10  certification to another court
+   99 not ascertained"
+Was agency decision oriented toward:,"1    More regulation/stricter regulation?
+2        Less regulation/more lenient regulation?
+3        Unclear"
+Nature of Administrative Proceeding at Issue,"1        Rulemaking
+2        Ratemaking
+3        Licensing
+4        Adjudication
+5        Other  (describe in notes)"
+Does the discussion of the issue in the SC’s opinion(s) refer to the Administrative Procedures Act (APA)?,"1 = Yes, 0 = N0"
+Legislative History,"Discusses whether the agency action/interpretation consistent with the legislative history
+1        cited
+2        not cited"
+Statute Language (majority),"Discusses whether the agency action/interpretation supported by language of the statutory text
+1        cited
+2        not cited"
+Longstanding construction (majority),"Discusses whether the agency action/interpretation was the longstanding construction of the agency
+1        cited
+2        not cited"
+Reasoned Analysis (majority),"Discusses whether the agency action/interpretation supported by reasoned analysis by agency that is entitled to Deference
+1        cited
+2        not cited"
+Accused of Overreach,"Discusses whether the agency is accused of overreach 1 = yes, 0 = no"
+NOTES:,NA
+summary,NA
+...85,NA
+Deference Average,#DIV/0!
+Notice and Comment Average,#DIV/0!
+Agency Policy Direction Average,#DIV/0!
+How often did agencies get deference when they went through notice and comment? (ALL CASES),#REF!
+How often did agencies get deference when they went through notice and comment? (Only Neither which removed two cases),#REF!
+Agency Policy Direction Average in Neither Cases (Neutral direction!),#REF!
+When granted deference what is average agency policy?(Neutral direction) (ALL CASES),#REF!
+When granted deference what is average agency policy? (Neither Cases)(Slightly leaning liberal),#REF!
+Type of appellant and respondent?,Really hard to do data on that because they don't match up and sometimes agency isn't one of them.
+Case,"Loper Bright Enterprises v. Raimondo, 603 U.S."
+Coder,Zayn
+date,NA
+Headnote,1
+Case type,3
+Circuit,12
+Circuit2,1
+cert,NA
+Concurrence,2
+Appellant/Petitioner (who brings the case),2
+Appellant 2,2
+Appellant 3,2
+Respondent (who is defending the position held by the lower court),9
+Respondent 2,8
+Respondent 3,8
+Non-agency plaintif type,0
+Govt Amicus,9
+SG Amicus,9
+Agency,NMFS
+AGENCIES,(NMFS) National Marine Fishing Services
+Statute,Magnuson-Stevens Act (MSA)
+Statute Year,1976
+Section,Sec. 551
+Reference,"16 U.S.C. 1801 
+
+et seq."
+Policy,1
+Policy Type,Rulemaking
+Policy Context,"Several years later, NMFS promulgated a rule approving the amendment. See 85 Fed. Reg.
+7414 (2020)."
+Rule Title,Magnuson-Stevens Fishery Conservation and Management Act Provisions; Fisheries of the Northeastern United States; Industry-Funded Monitoring
+Final Rule Year,2020
+rule_url,https://www.regulations.gov/document/NOAA_FRDOC_0001-5399
+rule_comments,20
+Rule Context,"""With respect to the Atlantic herring fishery, the Rule created an industry funded program that aims to ensure observer coverage on 50 percent of trips undertaken by vessels
+with certain types of permits. Under that program, vessel
+representatives must “declare into” a fishery before beginning a trip by notifying NMFS of the trip and announcing
+the species the vessel intends to harvest. If NMFS determines that an observer is required, but declines to assign a
+Government-paid one, the vessel must contract with and
+pay for a Government-certified third-party observer.
+NMFS estimated that the cost of such an observer would be
+up to $710 per day, reducing annual returns to the vessel
+owner by up to 20 percent. See id., at 7417–7418."""
+RIN,0648-BG91
+Fed. Reg.,85 Fed. Reg. 7414
+Fed. Reg. Context,"""The MSA does not contain similar terms addressing
+whether Atlantic herring fishermen may be required to
+bear costs associated with any observers a plan may mandate. And at one point, NMFS fully funded the observer
+coverage the New England Fishery Management Council
+required in its plan for the Atlantic herring fishery. See 79
+Fed. Reg. 8792 (2014). In 2013, however, the council proposed amending its fishery management plans to empower
+it to require fishermen to pay for observers if federal funding became unavailable. Several years later, NMFS promulgated a rule approving the amendment. See 85 Fed. Reg.
+7414 (2020)."""
+CFR,50 CFR Part 648
+CFR context,NA
+Other Fed. Reg. or CFR citations,NA
+Agency Policy Direction,1
+Policy Direction Context,"""Before 1976, unregulated foreign vessels dominated fishing in the international waters off the U. S. coast, which began just 12 nautical miles offshore. See, e.g., S. Rep.
+No. 94–459, pp. 2–3 (1975). Recognizing the resultant overfishing and the need for sound management of fishery resources, Congress enacted the Magnuson-Stevens Fishery
+Conservation and Management Act (MSA). See 90 Stat.
+331 (codified as amended at 16 U. S. C. §1801 et seq.). The
+MSA and subsequent amendments extended the jurisdiction of the United States to 200 nautical miles beyond the
+U. S. territorial sea and claimed “exclusive fishery management authority over all fish” within that area, known as the
+“exclusive economic zone.”"
+Deference,0
+Deference Context,"""It prescribes no deferential standard for courts to employ in answering those legal questions, despite mandating deferential judicial review of agency policymaking and factfinding. See §§706(2)(A), (E). And by directing courts
+to “interpret constitutional and statutory provisions” without differentiating between the two, §706, it makes clear that agency interpretations of statutes—like agency interpretations of the Constitution—are
+not entitled to deference. The APA’s history and the contemporaneous
+views of various respected commentators underscore the plain meaning of its text."""
+Type of Party Opposing Deference,1
+"for profit = 0, nonprofit = 1",0
+Type of Party Advocating Deference,1
+Expertise in Opinion,1
+Expertise Context  in Opinion,"For those reasons, delegating ultimate interpretive authority to agencies is simply not necessary to ensure that
+the resolution of statutory ambiguities is well informed by
+subject matter expertise. The better presumption is therefore that Congress expects courts to do their ordinary job of
+interpreting statutes, with due respect for the views of the
+Executive Branch. And to the extent that Congress and the
+Executive Branch may disagree with how the courts have
+performed that job in a particular case, they are of course
+always free to act by revising the statute"
+Accountability in Opinion,0
+Accountability to Congress in Opinion,0
+Accountability to President in Opinion,0
+Accountability Context  in Opinion,NA
+Expertise in Dissent,1
+Expertise Context in Dissent,"Congress would usually think agencies the better choice to resolve the ambiguities and fill the gaps in regulatory statutes. Because agencies are “experts in the field.” And because they are part of a political branch, with a claim to making interstitial policy. And because Congress has charged them, not us, with administering  [**910]  the statutes containing the open questions. At its core, Chevron is about respecting that allocation of responsibility—the [***154]  conferral of primary authority over regulatory matters to agencies, not courts."
+Accountability to Public Opinion in Dissent,1
+Accountability to Congress in Dissent,1
+Accountability to President in Dissent,1
+Accountability Context,"Agencies report to a President, who in turn answers to the public for [***114]  his policy calls; courts have no such accountability and no proper basis for making policy. And of course Congress has conferred on that expert, experienced, and politically accountable agency the authority to administer—to make rules about and otherwise implement—the statute giving rise to the ambiguity or gap."
+Notice and comment rulemaking,1
+"""notice-and-comment"" mentioned",1
+Notice-and-comment context,"Recall that courts are
+not supposed to defer when the agency construing a statute
+(1) has not been charged with administering that law; (2)
+has not used deliberative procedures—i.e., notice-and-comment rulemaking or adjudication; or (3) is intervening in a
+“major question,” of great economic and political significance."
+Pro-Deference Amicus,NA
+Anti-Deference Amicus,NA
+Unclear Amicus,NA
+Apply Standard of Review,De novo
+Standard of Review Context,"And the decision’s
+sole citation to legal scholarship was to Roscoe Pound, who
+long championed de novo judicial review"
+Chevron (1984) Cited,2
+Chevron Context,"""The Administrative Procedure Act requires courts to exercise their independent judgment in deciding whether an agency has acted within its statutory authority, and courts may not defer to an agency interpretation of the law simply because a statute is ambiguous; Chevron is overruled"""
+Mead (2001) Cited,2
+Mead Context,"Consider the many refinements we have made in an effort to match Chevron’s presumption to reality. We have
+said that Chevron applies only “when it appears that Congress delegated authority to the agency generally to make
+rules carrying the force of law, and that the agency interpretation claiming deference was promulgated in the exercise of that authority.” Mead, 533 U. S., at 226–227. In
+practice, that threshold requirement—sometimes called
+Chevron “step zero”—largely limits Chevron to “the fruits of
+notice-and-comment rulemaking or formal adjudication.”
+533 U. S., at 230. But even when those processes are used,
+deference is still not warranted “where the regulation is
+‘procedurally defective’—that is, where the agency errs by
+failing to follow the correct procedures in issuing the regulation.” Encino Motorcars, LLC v. Navarro, 579 U. S. 211,
+220 (2016) (quoting Mead, 533 U. S., at 227)."
+MVMA v. State Farm (1983) cited:,1
+State Farm Context,"When the best reading of a statute is that it delegates discretionary authority to an agency, the role of the reviewing court under the APA is, as always, to independently interpret the statute and effectuate the will of Congress subject to constitutional limits. The court fulfills that role by recognizing constitutional delegations, “fix[ing] the boundaries of [the] delegated authority,” H. Monaghan, Marbury and the Administrative State, 83 Colum. L. Rev. 1, 27 (1983), and ensuring the agency has engaged in “‘reasoned decisionmaking’ ” within those boundaries, Michigan, 576 U. S., at 750 (quoting Allentown Mack Sales & Service, Inc. v. NLRB, 522 U. S. 359, 374 (1998)); see also Motor Vehicle Mfrs. Assn. of United States, Inc. v. State Farm Mut. Automobile Ins. Co., 463 U. S. 29 (1983). By doing so, a court upholds the traditional conception of the judicial function that the APA adopts."
+Auer Cited,3
+Auer Context,NA
+Outcome,5
+Was agency decision oriented toward:,1
+Nature of Administrative Proceeding at Issue,1
+Does the discussion of the issue in the SC’s opinion(s) refer to the Administrative Procedures Act (APA)?,1
+Legislative History,1
+Statute Language (majority),2
+Longstanding construction (majority),2
+Reasoned Analysis (majority),1
+Accused of Overreach,1
+NOTES:,NA
+summary,"In  Loper Bright Enterprises v. Raimondo, the SCOTUS ruled that in accordance with the APA, the courts have the right to review statuatory provisions made by federal agencies. The Magnuson-Stevenson Act led to the NMFS requiring some private fishing vessels to bear the cost of having federal observors that were there to enforce fishing standards. Petitioners argued that the MSA did not explicitly require private vessels to pay for federal observors, and the Majority opinion agreed along. This effectively overturned the Chevron doctrine that delegated reasonable interperation to agencies on ambiguous acts. The decision was along ideological lines, with Roberts (majority opinion) writing that the Administrative Procedure Act (APA) requires courts to independently interpret statutory provisions, even if ambiguous, without defaulting to agency interpretations."
+...85,NA
+Deference Average,NA
+Notice and Comment Average,NA
+Agency Policy Direction Average,NA
+How often did agencies get deference when they went through notice and comment? (ALL CASES),NA
+How often did agencies get deference when they went through notice and comment? (Only Neither which removed two cases),NA
+Agency Policy Direction Average in Neither Cases (Neutral direction!),NA
+When granted deference what is average agency policy?(Neutral direction) (ALL CASES),NA
+When granted deference what is average agency policy? (Neither Cases)(Slightly leaning liberal),NA
+Type of appellant and respondent?,NA
