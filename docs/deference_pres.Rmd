@@ -1,0 +1,88 @@
+---
+title: "Judicial Review and Democracy"
+subtitle: "Do Courts Care About the Policy Process?"
+author: "Devin Judge-Lord"
+date: Junior Law and Politics Bullet Talk 
+#date: "Paper & slides: [judgelord.github.io/research/correspondence](https://judgelord.github.io/research/correspondence)"
+urlcolor: cyan
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      ratio: '16:10'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include = FALSE, cache = FALSE, echo = FALSE}
+library(knitr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE, 
+                      message = FALSE,
+                      cache = FALSE,
+                      fig.retina = 2,
+                      out.width = "75%",
+                      fig.align = "center", 
+                      dpi = 100)
+# Xaringan: https://slides.yihui.name/xaringan/
+library("xaringan")
+library("xaringanthemer")
+library("here")
+
+
+xaringanthemer::style_mono_light(base_color = "#3b444b",
+          link_color = "#B7E4CF",
+          background_color = "#FAF0E6", # linen
+          header_font_google = google_font("PT Sans"),
+          text_font_google = google_font("Old Standard"),
+          base_font_size = "20px",
+          text_font_size = "25px",
+          padding = "10px",
+          code_font_google = google_font("Inconsolata"),
+          code_inline_background_color    = "#F5F5F5",
+          table_row_even_background_color = "#d5e3dd",
+          #extra_css =        list(".remark-slide-number" = list("display" = "none")), # OMIT SLIDE NUMBERS 
+          outfile = "docs/xaringan-themer.css")
+
+```
+
+
+
+
+
+
+# Data (so far)
+
+## All SCOTUS cases + a random sample of 175 federal circuit court cases that mention "Administrative Law" in the LexisNexis headnotes, 1984-2000.
+### - **Ideology:** Justices (Segal-Cover scores) × Policy (Spaeth criteria)
+### - Parties, briefs, opinions, outcomes
+## Draft & final **rules** + **comments** where rule is at issue
+
+
+---
+
+### \#1. Does the policymaking process affect judicial review? 
+
+- ❌ -  expertise
+- ❌ -  accountability 
+- ✅ - participatory/controversial
+- ✅ - deregulatory
+
+--
+
+### \#2. Why are policies made through notice and comment more likely to be struck down
+
+- ❌ -  ideological voting 
+- ❌ -  selection from lower courts
+- ✅ -  controversial/salient (but see #1)
+
+--
+
+### \#3. Is/was *Chevron/Mead* a jurisprudential regime?
+
+- The jurisprudential regimes methods debate used 1984-2000 data; **should we revisit? **
