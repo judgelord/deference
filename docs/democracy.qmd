@@ -15,13 +15,15 @@ format:
    incremental: true   
    smaller: true
    scrollable: true
-   #theme: [michigan.scss]
+   theme: [../michigan.scss]
 embed-resources: true
 ---
 
 
-
-## 
+```{r echo=FALSE, results='hide', include=FALSE}
+# copy master style sheet
+file.copy(here::here("../michigan.scss"), here::here(), overwrite = T)
+```
 
 
 ### 1. The role of public participation in democracy and its effects on policy 
@@ -36,6 +38,8 @@ embed-resources: true
 
 > "the degree of the agency's care, its consistency, formality, and relative expertness...the fairness and deliberation that should underlie a pronouncement of such force (APA notice and comment is 'designed to assure due deliberation')." *US v. Mead Corp.*
 
+<!--LOPER BRIGHT and other horsemen--> 
+
 
 ## Data (so far)
 
@@ -49,7 +53,7 @@ All 517 Administrative Law^["Administrative Law" in the LexisNexis headnotes] SC
 - **Statutes** at issue (details TBD)
 - Draft & final **rules** + **comments** where rule is at issue (1984-2025)
 
-All thanks to Zayn Merrick & Will Cooper! ~20,000 bits of new information
+~20,000 bits of new hand-coded information
 
 
 ## SCOTUS AdLaw Cases
@@ -96,7 +100,7 @@ All thanks to Zayn Merrick & Will Cooper! ~20,000 bits of new information
 
 ### \#3. Was *Chevron/Mead* a regime?
 
-- The jurisprudential regimes methods debate used 1969-2000 data; I can revisit with 25 years of additional cases
+- The jurisprudential regimes debate used 1969-2000 data; I can revisit with 25 years of additional cases
 
 
 ## Log odds of vote for agency
