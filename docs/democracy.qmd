@@ -1,7 +1,7 @@
 ---
 title: "Judicial Review and Democracy"
 subtitle: "Do Courts Care About the Policy Process?"
-author: "Devin Judge-Lord <br> Paper & slides: [judgelord.github.io/research/deference](https://judgelord.github.io/research"
+author: "Devin Judge-Lord"
 editor_options: 
   chunk_output_type: console
 title-slide-attributes:
